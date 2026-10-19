@@ -1,0 +1,261 @@
+Running 4 items in this shard
+FFFF                                                                     [100%]
+=================================== FAILURES ===================================
+______ test_audio_encoder_broadcast_mask_matches_dense[sdpa-qwen2_audio] _______
+
+model_name = 'qwen2_audio', attn_implementation = 'sdpa'
+
+    @pytest.mark.parametrize("model_name", ["qwen2_audio", "audioflamingo3"])
+    @pytest.mark.parametrize("attn_implementation", ["sdpa", "eager"])
+    @torch.inference_mode()
+    def test_audio_encoder_broadcast_mask_matches_dense(model_name, attn_implementation):
+        from transformers.models.qwen2_audio import Qwen2AudioEncoder
+        from transformers.models.qwen2_audio.configuration_qwen2_audio import (
+            Qwen2AudioEncoderConfig,
+        )
+    
+        from vllm.model_executor.models.audioflamingo3 import (
+            AudioFlamingo3Encoder,
+            AudioFlamingo3ForConditionalGeneration,
+        )
+        from vllm.model_executor.models.qwen2_audio import Qwen2AudioForConditionalGeneration
+    
+        config = Qwen2AudioEncoderConfig(
+            num_mel_bins=4,
+            d_model=16,
+            encoder_layers=1,
+            encoder_attention_heads=2,
+            encoder_ffn_dim=32,
+            max_source_positions=8,
+        )
+        config._attn_implementation = attn_implementation
+        encoder_cls = (
+            Qwen2AudioEncoder if model_name == "qwen2_audio" else AudioFlamingo3Encoder
+        )
+        encoder = encoder_cls(config).eval()
+        inputs = torch.randn(3, 4, 16)
+        feature_mask = torch.arange(16)[None, :] < torch.tensor([16, 9, 8])[:, None]
+        model = SimpleNamespace(
+            audio_tower=encoder, multi_modal_projector=torch.nn.Identity()
+        )
+        masks = []
+        hook = encoder.register_forward_pre_hook(
+            lambda module, args, kwargs: masks.append(kwargs["attention_mask"]),
+            with_kwargs=True,
+        )
+        try:
+            if model_name == "qwen2_audio":
+                actual = Qwen2AudioForConditionalGeneration._process_audio_input(
+                    model,
+                    dict(type="audio_features", input_features=inputs,
+                         feature_attention_mask=feature_mask),
+                )
+            else:
+                actual = AudioFlamingo3ForConditionalGeneration._encode_audio_features(
+                    model, inputs, feature_mask
+                )
+        finally:
+            hook.remove()
+    
+>       assert masks[0].shape == (3, 1, 1, 8)
+E       assert torch.Size([3, 1, 8, 8]) == (3, 1, 1, 8)
+E         
+E         At index 2 diff: 8 != 1
+E         Use -v to get more diff
+
+tests/models/multimodal/processing/test_audioflamingo3.py:210: AssertionError
+_____ test_audio_encoder_broadcast_mask_matches_dense[sdpa-audioflamingo3] _____
+
+model_name = 'audioflamingo3', attn_implementation = 'sdpa'
+
+    @pytest.mark.parametrize("model_name", ["qwen2_audio", "audioflamingo3"])
+    @pytest.mark.parametrize("attn_implementation", ["sdpa", "eager"])
+    @torch.inference_mode()
+    def test_audio_encoder_broadcast_mask_matches_dense(model_name, attn_implementation):
+        from transformers.models.qwen2_audio import Qwen2AudioEncoder
+        from transformers.models.qwen2_audio.configuration_qwen2_audio import (
+            Qwen2AudioEncoderConfig,
+        )
+    
+        from vllm.model_executor.models.audioflamingo3 import (
+            AudioFlamingo3Encoder,
+            AudioFlamingo3ForConditionalGeneration,
+        )
+        from vllm.model_executor.models.qwen2_audio import Qwen2AudioForConditionalGeneration
+    
+        config = Qwen2AudioEncoderConfig(
+            num_mel_bins=4,
+            d_model=16,
+            encoder_layers=1,
+            encoder_attention_heads=2,
+            encoder_ffn_dim=32,
+            max_source_positions=8,
+        )
+        config._attn_implementation = attn_implementation
+        encoder_cls = (
+            Qwen2AudioEncoder if model_name == "qwen2_audio" else AudioFlamingo3Encoder
+        )
+        encoder = encoder_cls(config).eval()
+        inputs = torch.randn(3, 4, 16)
+        feature_mask = torch.arange(16)[None, :] < torch.tensor([16, 9, 8])[:, None]
+        model = SimpleNamespace(
+            audio_tower=encoder, multi_modal_projector=torch.nn.Identity()
+        )
+        masks = []
+        hook = encoder.register_forward_pre_hook(
+            lambda module, args, kwargs: masks.append(kwargs["attention_mask"]),
+            with_kwargs=True,
+        )
+        try:
+            if model_name == "qwen2_audio":
+                actual = Qwen2AudioForConditionalGeneration._process_audio_input(
+                    model,
+                    dict(type="audio_features", input_features=inputs,
+                         feature_attention_mask=feature_mask),
+                )
+            else:
+                actual = AudioFlamingo3ForConditionalGeneration._encode_audio_features(
+                    model, inputs, feature_mask
+                )
+        finally:
+            hook.remove()
+    
+>       assert masks[0].shape == (3, 1, 1, 8)
+E       assert torch.Size([3, 1, 8, 8]) == (3, 1, 1, 8)
+E         
+E         At index 2 diff: 8 != 1
+E         Use -v to get more diff
+
+tests/models/multimodal/processing/test_audioflamingo3.py:210: AssertionError
+______ test_audio_encoder_broadcast_mask_matches_dense[eager-qwen2_audio] ______
+
+model_name = 'qwen2_audio', attn_implementation = 'eager'
+
+    @pytest.mark.parametrize("model_name", ["qwen2_audio", "audioflamingo3"])
+    @pytest.mark.parametrize("attn_implementation", ["sdpa", "eager"])
+    @torch.inference_mode()
+    def test_audio_encoder_broadcast_mask_matches_dense(model_name, attn_implementation):
+        from transformers.models.qwen2_audio import Qwen2AudioEncoder
+        from transformers.models.qwen2_audio.configuration_qwen2_audio import (
+            Qwen2AudioEncoderConfig,
+        )
+    
+        from vllm.model_executor.models.audioflamingo3 import (
+            AudioFlamingo3Encoder,
+            AudioFlamingo3ForConditionalGeneration,
+        )
+        from vllm.model_executor.models.qwen2_audio import Qwen2AudioForConditionalGeneration
+    
+        config = Qwen2AudioEncoderConfig(
+            num_mel_bins=4,
+            d_model=16,
+            encoder_layers=1,
+            encoder_attention_heads=2,
+            encoder_ffn_dim=32,
+            max_source_positions=8,
+        )
+        config._attn_implementation = attn_implementation
+        encoder_cls = (
+            Qwen2AudioEncoder if model_name == "qwen2_audio" else AudioFlamingo3Encoder
+        )
+        encoder = encoder_cls(config).eval()
+        inputs = torch.randn(3, 4, 16)
+        feature_mask = torch.arange(16)[None, :] < torch.tensor([16, 9, 8])[:, None]
+        model = SimpleNamespace(
+            audio_tower=encoder, multi_modal_projector=torch.nn.Identity()
+        )
+        masks = []
+        hook = encoder.register_forward_pre_hook(
+            lambda module, args, kwargs: masks.append(kwargs["attention_mask"]),
+            with_kwargs=True,
+        )
+        try:
+            if model_name == "qwen2_audio":
+                actual = Qwen2AudioForConditionalGeneration._process_audio_input(
+                    model,
+                    dict(type="audio_features", input_features=inputs,
+                         feature_attention_mask=feature_mask),
+                )
+            else:
+                actual = AudioFlamingo3ForConditionalGeneration._encode_audio_features(
+                    model, inputs, feature_mask
+                )
+        finally:
+            hook.remove()
+    
+>       assert masks[0].shape == (3, 1, 1, 8)
+E       assert torch.Size([3, 1, 8, 8]) == (3, 1, 1, 8)
+E         
+E         At index 2 diff: 8 != 1
+E         Use -v to get more diff
+
+tests/models/multimodal/processing/test_audioflamingo3.py:210: AssertionError
+____ test_audio_encoder_broadcast_mask_matches_dense[eager-audioflamingo3] _____
+
+model_name = 'audioflamingo3', attn_implementation = 'eager'
+
+    @pytest.mark.parametrize("model_name", ["qwen2_audio", "audioflamingo3"])
+    @pytest.mark.parametrize("attn_implementation", ["sdpa", "eager"])
+    @torch.inference_mode()
+    def test_audio_encoder_broadcast_mask_matches_dense(model_name, attn_implementation):
+        from transformers.models.qwen2_audio import Qwen2AudioEncoder
+        from transformers.models.qwen2_audio.configuration_qwen2_audio import (
+            Qwen2AudioEncoderConfig,
+        )
+    
+        from vllm.model_executor.models.audioflamingo3 import (
+            AudioFlamingo3Encoder,
+            AudioFlamingo3ForConditionalGeneration,
+        )
+        from vllm.model_executor.models.qwen2_audio import Qwen2AudioForConditionalGeneration
+    
+        config = Qwen2AudioEncoderConfig(
+            num_mel_bins=4,
+            d_model=16,
+            encoder_layers=1,
+            encoder_attention_heads=2,
+            encoder_ffn_dim=32,
+            max_source_positions=8,
+        )
+        config._attn_implementation = attn_implementation
+        encoder_cls = (
+            Qwen2AudioEncoder if model_name == "qwen2_audio" else AudioFlamingo3Encoder
+        )
+        encoder = encoder_cls(config).eval()
+        inputs = torch.randn(3, 4, 16)
+        feature_mask = torch.arange(16)[None, :] < torch.tensor([16, 9, 8])[:, None]
+        model = SimpleNamespace(
+            audio_tower=encoder, multi_modal_projector=torch.nn.Identity()
+        )
+        masks = []
+        hook = encoder.register_forward_pre_hook(
+            lambda module, args, kwargs: masks.append(kwargs["attention_mask"]),
+            with_kwargs=True,
+        )
+        try:
+            if model_name == "qwen2_audio":
+                actual = Qwen2AudioForConditionalGeneration._process_audio_input(
+                    model,
+                    dict(type="audio_features", input_features=inputs,
+                         feature_attention_mask=feature_mask),
+                )
+            else:
+                actual = AudioFlamingo3ForConditionalGeneration._encode_audio_features(
+                    model, inputs, feature_mask
+                )
+        finally:
+            hook.remove()
+    
+>       assert masks[0].shape == (3, 1, 1, 8)
+E       assert torch.Size([3, 1, 8, 8]) == (3, 1, 1, 8)
+E         
+E         At index 2 diff: 8 != 1
+E         Use -v to get more diff
+
+tests/models/multimodal/processing/test_audioflamingo3.py:210: AssertionError
+=========================== short test summary info ============================
+FAILED tests/models/multimodal/processing/test_audioflamingo3.py::test_audio_encoder_broadcast_mask_matches_dense[sdpa-qwen2_audio]
+FAILED tests/models/multimodal/processing/test_audioflamingo3.py::test_audio_encoder_broadcast_mask_matches_dense[sdpa-audioflamingo3]
+FAILED tests/models/multimodal/processing/test_audioflamingo3.py::test_audio_encoder_broadcast_mask_matches_dense[eager-qwen2_audio]
+FAILED tests/models/multimodal/processing/test_audioflamingo3.py::test_audio_encoder_broadcast_mask_matches_dense[eager-audioflamingo3]
+4 failed, 3 deselected in 1.66s

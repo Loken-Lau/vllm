@@ -1,0 +1,106 @@
+{
+  "qwen2_audio": {
+    "single": {
+      "baseline": {
+        "samples": 40,
+        "median_ms": 216.40934981405735,
+        "population_stddev_ms": 2.8846033601165013,
+        "min_ms": 214.2382189631462,
+        "max_ms": 232.63341933488846,
+        "round_medians_ms": [
+          216.11559204757214,
+          216.4693959057331
+        ]
+      },
+      "compact": {
+        "samples": 40,
+        "median_ms": 214.53296765685081,
+        "population_stddev_ms": 3.3985367238212034,
+        "min_ms": 212.73622289299965,
+        "max_ms": 232.07787051796913,
+        "round_medians_ms": [
+          214.66618962585926,
+          214.48827534914017
+        ]
+      },
+      "median_change_percent": -0.8670522594420027
+    },
+    "mixed": {
+      "baseline": {
+        "samples": 40,
+        "median_ms": 562.6143775880337,
+        "population_stddev_ms": 6.084392983703259,
+        "min_ms": 558.1263042986393,
+        "max_ms": 583.3931118249893,
+        "round_medians_ms": [
+          565.9649055451155,
+          560.8890522271395
+        ]
+      },
+      "compact": {
+        "samples": 40,
+        "median_ms": 564.111290499568,
+        "population_stddev_ms": 3.0399644220144144,
+        "min_ms": 558.5037209093571,
+        "max_ms": 574.924036860466,
+        "round_medians_ms": [
+          563.4360369294882,
+          564.4749533385038
+        ]
+      },
+      "median_change_percent": 0.2660637500861096
+    }
+  },
+  "audioflamingo3": {
+    "single": {
+      "baseline": {
+        "samples": 40,
+        "median_ms": 224.45837780833244,
+        "population_stddev_ms": 3.234471936554543,
+        "min_ms": 221.5881310403347,
+        "max_ms": 236.7212101817131,
+        "round_medians_ms": [
+          222.63581864535809,
+          225.6474867463112
+        ]
+      },
+      "compact": {
+        "samples": 40,
+        "median_ms": 222.55097515881062,
+        "population_stddev_ms": 2.782763771899827,
+        "min_ms": 220.91682255268097,
+        "max_ms": 233.37049782276154,
+        "round_medians_ms": [
+          221.96647711098194,
+          223.2008222490549
+        ]
+      },
+      "median_change_percent": -0.8497801098565239
+    },
+    "mixed": {
+      "baseline": {
+        "samples": 40,
+        "median_ms": 599.7145995497704,
+        "population_stddev_ms": 20.52415087074146,
+        "min_ms": 595.6520587205887,
+        "max_ms": 729.5038662850857,
+        "round_medians_ms": [
+          598.2612110674381,
+          602.7384307235479
+        ]
+      },
+      "compact": {
+        "samples": 40,
+        "median_ms": 602.2129599004984,
+        "population_stddev_ms": 7.30313239268494,
+        "min_ms": 585.8659520745277,
+        "max_ms": 623.0217181146145,
+        "round_medians_ms": [
+          602.7450524270535,
+          602.2129599004984
+        ]
+      },
+      "median_change_percent": 0.4165915508149487
+    }
+  }
+}

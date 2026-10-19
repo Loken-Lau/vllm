@@ -1,0 +1,7 @@
+Reserved 1 GPU(s): [1] for command execution (timeout: 0h 5m 0s)
+Released automatically if no GPU usage is detected for 30m
+W1019 12:26:26.823000 1076285 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1019 12:26:26.824000 1076285 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1019 12:26:26.825000 1076285 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+PASS: 96 encoder comparisons, 6 boundary cases and padding control.
+Maximum encoder difference: 0.0

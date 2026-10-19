@@ -1,0 +1,16 @@
+chat_template.jinja verified 703
+added_tokens.json verified 762
+config.json verified 2093
+generation_config.json verified 145
+merges.txt verified 1671853
+model-00004-of-00004.safetensors verified 1723994720
+model.safetensors.index.json verified 74525
+processor_config.json verified 494
+special_tokens_map.json verified 743
+tokenizer.json verified 11423182
+tokenizer_config.json verified 789
+vocab.json verified 2776833
+model-00001-of-00004.safetensors verified 4886285784
+model-00002-of-00004.safetensors verified 4991497784
+model-00003-of-00004.safetensors verified 4932752872
+All base checkpoint files verified.

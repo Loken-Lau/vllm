@@ -1,0 +1,14 @@
+config.json verified 853
+generation_config.json verified 230
+merges.txt verified 1671839
+model-00004-of-00005.safetensors verified 3643135696
+model-00003-of-00005.safetensors verified 3980819456
+model-00001-of-00005.safetensors verified 3911340848
+model.safetensors.index.json verified 78989
+preprocessor_config.json verified 342
+tokenizer_config.json verified 638335
+model-00002-of-00005.safetensors verified 3980786080
+tokenizer.json verified 7028015
+vocab.json verified 2776833
+model-00005-of-00005.safetensors verified 1278214288
+All checkpoint files verified.

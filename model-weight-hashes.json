@@ -1,0 +1,48 @@
+{
+  "Qwen2-Audio-7B-Instruct": {
+    "revision": "0a095220c30b7b31434169c3086508ef3ea5bf0a",
+    "weight_shards": {
+      "model-00001-of-00005.safetensors": {
+        "bytes": 3911340848,
+        "sha256": "383de5b5b06f7e7f276850a065d9164641c93009f79a377352a7c949d17c1d7a"
+      },
+      "model-00002-of-00005.safetensors": {
+        "bytes": 3980786080,
+        "sha256": "610e59a23cdf1f78d7e3b42e69f2e1a08578f29726391a1772aecac95db3c59c"
+      },
+      "model-00003-of-00005.safetensors": {
+        "bytes": 3980819456,
+        "sha256": "b9ea76e97226524a12b6acc5e896bebf01a01018fbcad20a72eb13c7950f6916"
+      },
+      "model-00004-of-00005.safetensors": {
+        "bytes": 3643135696,
+        "sha256": "d68dee591619e26e3d0af23a07e181c70134fbc3aa33e24d872224607aae2c62"
+      },
+      "model-00005-of-00005.safetensors": {
+        "bytes": 1278214288,
+        "sha256": "a447dab3e72f9debd37a0c4ae0b9179a1bad2b06357092a77c066a0405bbc7d2"
+      }
+    }
+  },
+  "audio-flamingo-3-hf": {
+    "revision": "7d4bae64ee29878af6504ae6f6bb3e40492838ad",
+    "weight_shards": {
+      "model-00001-of-00004.safetensors": {
+        "bytes": 4886285784,
+        "sha256": "df42e51f121d243a7bbfb253ba2d388046b6b9abb33b7770c789d431c04d21bf"
+      },
+      "model-00002-of-00004.safetensors": {
+        "bytes": 4991497784,
+        "sha256": "36f6299c1e3137d431cf61044537c4dda0627d7092a5a44b5ce72eca4dcc56da"
+      },
+      "model-00003-of-00004.safetensors": {
+        "bytes": 4932752872,
+        "sha256": "1e0c90ec3232d5a54c8722b19487fa2a117463fcd662ff6e93bab9970d0fe2f7"
+      },
+      "model-00004-of-00004.safetensors": {
+        "bytes": 1723994720,
+        "sha256": "4050632946b7c60cf2855d9d7628589639bd06bc2d5d45a58988fe97c7d98af2"
+      }
+    }
+  }
+}

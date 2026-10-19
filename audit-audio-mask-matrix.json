@@ -1,0 +1,1850 @@
+{
+  "source_commit": "283d48f4ebb404b00e76264ad8f759d7e9a05dfd",
+  "torch": "2.14.0+cu130",
+  "transformers": "5.19.0",
+  "device": "NVIDIA A800 80GB PCIe",
+  "encoder_cases": [
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": null,
+      "model": "qwen2_audio",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": null,
+      "model": "qwen2_audio",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": null,
+      "model": "qwen2_audio",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": null,
+      "model": "qwen2_audio",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 192,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": null,
+      "model": "audioflamingo3",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": null,
+      "model": "audioflamingo3",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": null,
+      "model": "audioflamingo3",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": null,
+      "model": "audioflamingo3",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 192,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": "sdpa",
+      "model": "qwen2_audio",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": "sdpa",
+      "model": "qwen2_audio",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": "sdpa",
+      "model": "qwen2_audio",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": "sdpa",
+      "model": "qwen2_audio",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 192,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": "sdpa",
+      "model": "audioflamingo3",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": "sdpa",
+      "model": "audioflamingo3",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": "sdpa",
+      "model": "audioflamingo3",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": "sdpa",
+      "model": "audioflamingo3",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 192,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": "eager",
+      "model": "qwen2_audio",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": "eager",
+      "model": "qwen2_audio",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": "eager",
+      "model": "qwen2_audio",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": "eager",
+      "model": "qwen2_audio",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 192,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": "eager",
+      "model": "audioflamingo3",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": "eager",
+      "model": "audioflamingo3",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": "eager",
+      "model": "audioflamingo3",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "backend": "eager",
+      "model": "audioflamingo3",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 192,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": null,
+      "model": "qwen2_audio",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": null,
+      "model": "qwen2_audio",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": null,
+      "model": "qwen2_audio",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": null,
+      "model": "qwen2_audio",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 192,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": null,
+      "model": "audioflamingo3",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": null,
+      "model": "audioflamingo3",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": null,
+      "model": "audioflamingo3",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": null,
+      "model": "audioflamingo3",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 192,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": "sdpa",
+      "model": "qwen2_audio",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": "sdpa",
+      "model": "qwen2_audio",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": "sdpa",
+      "model": "qwen2_audio",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": "sdpa",
+      "model": "qwen2_audio",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 192,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": "sdpa",
+      "model": "audioflamingo3",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": "sdpa",
+      "model": "audioflamingo3",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": "sdpa",
+      "model": "audioflamingo3",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": "sdpa",
+      "model": "audioflamingo3",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 192,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": "eager",
+      "model": "qwen2_audio",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": "eager",
+      "model": "qwen2_audio",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": "eager",
+      "model": "qwen2_audio",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": "eager",
+      "model": "qwen2_audio",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 192,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": "eager",
+      "model": "audioflamingo3",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": "eager",
+      "model": "audioflamingo3",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": "eager",
+      "model": "audioflamingo3",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 32,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float32",
+      "backend": "eager",
+      "model": "audioflamingo3",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 192,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": null,
+      "model": "qwen2_audio",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": null,
+      "model": "qwen2_audio",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": null,
+      "model": "qwen2_audio",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": null,
+      "model": "qwen2_audio",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 96,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": null,
+      "model": "audioflamingo3",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": null,
+      "model": "audioflamingo3",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": null,
+      "model": "audioflamingo3",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": null,
+      "model": "audioflamingo3",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 96,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": "sdpa",
+      "model": "qwen2_audio",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": "sdpa",
+      "model": "qwen2_audio",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": "sdpa",
+      "model": "qwen2_audio",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": "sdpa",
+      "model": "qwen2_audio",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 96,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": "sdpa",
+      "model": "audioflamingo3",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": "sdpa",
+      "model": "audioflamingo3",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": "sdpa",
+      "model": "audioflamingo3",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": "sdpa",
+      "model": "audioflamingo3",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 96,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": "eager",
+      "model": "qwen2_audio",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": "eager",
+      "model": "qwen2_audio",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": "eager",
+      "model": "qwen2_audio",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": "eager",
+      "model": "qwen2_audio",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 96,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": "eager",
+      "model": "audioflamingo3",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": "eager",
+      "model": "audioflamingo3",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": "eager",
+      "model": "audioflamingo3",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.float16",
+      "backend": "eager",
+      "model": "audioflamingo3",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 96,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": null,
+      "model": "qwen2_audio",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": null,
+      "model": "qwen2_audio",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": null,
+      "model": "qwen2_audio",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": null,
+      "model": "qwen2_audio",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 96,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": null,
+      "model": "audioflamingo3",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": null,
+      "model": "audioflamingo3",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": null,
+      "model": "audioflamingo3",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": null,
+      "model": "audioflamingo3",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 96,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": "sdpa",
+      "model": "qwen2_audio",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": "sdpa",
+      "model": "qwen2_audio",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": "sdpa",
+      "model": "qwen2_audio",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": "sdpa",
+      "model": "qwen2_audio",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 96,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": "sdpa",
+      "model": "audioflamingo3",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": "sdpa",
+      "model": "audioflamingo3",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": "sdpa",
+      "model": "audioflamingo3",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": "sdpa",
+      "model": "audioflamingo3",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 96,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": "eager",
+      "model": "qwen2_audio",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": "eager",
+      "model": "qwen2_audio",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": "eager",
+      "model": "qwen2_audio",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": "eager",
+      "model": "qwen2_audio",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 96,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": "eager",
+      "model": "audioflamingo3",
+      "lengths": [
+        16
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": "eager",
+      "model": "audioflamingo3",
+      "lengths": [
+        4
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": "eager",
+      "model": "audioflamingo3",
+      "lengths": [
+        5
+      ],
+      "mask_shape": [
+        1,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 16,
+      "max_abs_diff": 0.0
+    },
+    {
+      "device": "cuda",
+      "dtype": "torch.bfloat16",
+      "backend": "eager",
+      "model": "audioflamingo3",
+      "lengths": [
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "mask_shape": [
+        6,
+        1,
+        1,
+        8
+      ],
+      "storage_bytes": 96,
+      "max_abs_diff": 0.0
+    }
+  ],
+  "boundary_cases": [
+    {
+      "mel_width": 1,
+      "lengths": [
+        0,
+        1,
+        1
+      ],
+      "shape": [
+        3,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "mel_width": 2,
+      "lengths": [
+        0,
+        1,
+        2
+      ],
+      "shape": [
+        3,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "mel_width": 3,
+      "lengths": [
+        0,
+        1,
+        3
+      ],
+      "shape": [
+        3,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "mel_width": 14,
+      "lengths": [
+        0,
+        1,
+        14
+      ],
+      "shape": [
+        3,
+        1,
+        1,
+        7
+      ]
+    },
+    {
+      "mel_width": 15,
+      "lengths": [
+        0,
+        1,
+        15
+      ],
+      "shape": [
+        3,
+        1,
+        1,
+        8
+      ]
+    },
+    {
+      "mel_width": 16,
+      "lengths": [
+        0,
+        1,
+        16
+      ],
+      "shape": [
+        3,
+        1,
+        1,
+        8
+      ]
+    }
+  ],
+  "padding_control": {
+    "masked_diff": 0.0,
+    "unmasked_diff": 71.13426208496094
+  }
+}

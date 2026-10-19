@@ -1,0 +1,320 @@
+{
+  "qwen2-audio": {
+    "cases": {
+      "single": {
+        "compared_request_pairs": 10,
+        "text_and_token_ids_identical": true,
+        "max_top5_logprob_abs_diff": 0.0,
+        "prompt_tokens": [
+          82
+        ],
+        "output_tokens": [
+          13
+        ],
+        "timings": {
+          "baseline": {
+            "median_ms": 217.04963594675064,
+            "population_stddev_ms": 6.022864544817961,
+            "min_ms": 216.40337258577347,
+            "max_ms": 236.82724684476852,
+            "samples_ms": [
+              222.79654815793037,
+              216.40337258577347,
+              216.86545386910439,
+              217.05995872616768,
+              236.82724684476852,
+              217.36206859350204,
+              216.77882596850395,
+              216.63865074515343,
+              217.0393131673336,
+              217.77474135160446
+            ]
+          },
+          "compact": {
+            "median_ms": 224.9074950814247,
+            "population_stddev_ms": 139.14467988979666,
+            "min_ms": 222.41290286183357,
+            "max_ms": 689.9160332977772,
+            "samples_ms": [
+              689.9160332977772,
+              224.18680787086487,
+              222.7647788822651,
+              222.41290286183357,
+              222.68979251384735,
+              243.53079870343208,
+              227.2270955145359,
+              226.0131873190403,
+              225.05106031894684,
+              224.7639298439026
+            ]
+          }
+        }
+      },
+      "mixed": {
+        "compared_request_pairs": 30,
+        "text_and_token_ids_identical": true,
+        "max_top5_logprob_abs_diff": 0.0,
+        "prompt_tokens": [
+          82,
+          431,
+          757
+        ],
+        "output_tokens": [
+          11,
+          32,
+          32
+        ],
+        "timings": {
+          "baseline": {
+            "median_ms": 571.9877202063799,
+            "population_stddev_ms": 4.325126051554168,
+            "min_ms": 569.4962665438652,
+            "max_ms": 582.9172544181347,
+            "samples_ms": [
+              581.1134651303291,
+              573.0314180254936,
+              570.5016106367111,
+              571.9191506505013,
+              570.8630383014679,
+              572.865579277277,
+              571.6460235416889,
+              572.0562897622585,
+              582.9172544181347,
+              569.4962665438652
+            ]
+          },
+          "compact": {
+            "median_ms": 583.90904776752,
+            "population_stddev_ms": 5.377539803240235,
+            "min_ms": 576.6388662159443,
+            "max_ms": 597.3738357424736,
+            "samples_ms": [
+              583.7365426123142,
+              586.2497128546238,
+              579.6771980822086,
+              579.8225849866867,
+              581.5967880189419,
+              597.3738357424736,
+              586.2768664956093,
+              584.0815529227257,
+              586.0296413302422,
+              576.6388662159443
+            ]
+          }
+        }
+      }
+    },
+    "actual_encoder_runtime": [
+      {
+        "model_class": "Qwen2AudioForConditionalGeneration",
+        "encoder_class": "Qwen2AudioEncoder",
+        "attention_backend": "sdpa"
+      }
+    ],
+    "captured_masks": {
+      "baseline": {
+        "forward_calls": 33,
+        "encoded_audio_chunks_including_warmups": 44,
+        "unique_shapes": [
+          [
+            1,
+            1,
+            1500,
+            1500
+          ],
+          [
+            2,
+            1,
+            1500,
+            1500
+          ]
+        ],
+        "bytes_per_audio_chunk": 4500000
+      },
+      "compact": {
+        "forward_calls": 33,
+        "encoded_audio_chunks_including_warmups": 44,
+        "unique_shapes": [
+          [
+            1,
+            1,
+            1,
+            1500
+          ],
+          [
+            2,
+            1,
+            1,
+            1500
+          ]
+        ],
+        "bytes_per_audio_chunk": 3000
+      }
+    },
+    "audio_seconds": [
+      2.0,
+      15.948,
+      29.0
+    ],
+    "limitations": "One speech recording plus repeated long speech; eager BF16 TP1 on A800, not a WER evaluation or an end-to-end speedup claim."
+  },
+  "audioflamingo3": {
+    "cases": {
+      "single": {
+        "compared_request_pairs": 10,
+        "text_and_token_ids_identical": true,
+        "max_top5_logprob_abs_diff": 0.0,
+        "prompt_tokens": [
+          74
+        ],
+        "output_tokens": [
+          14
+        ],
+        "timings": {
+          "baseline": {
+            "median_ms": 225.01648776233196,
+            "population_stddev_ms": 1.7296310854164412,
+            "min_ms": 223.80680590867996,
+            "max_ms": 230.01636937260628,
+            "samples_ms": [
+              230.01636937260628,
+              226.9856184720993,
+              225.0514253973961,
+              223.80680590867996,
+              225.23288428783417,
+              225.31568259000778,
+              224.33079779148102,
+              224.1860032081604,
+              224.60588812828064,
+              224.98155012726784
+            ]
+          },
+          "compact": {
+            "median_ms": 221.9747956842184,
+            "population_stddev_ms": 49.66478561786096,
+            "min_ms": 220.7375131547451,
+            "max_ms": 388.48286494612694,
+            "samples_ms": [
+              388.48286494612694,
+              222.45286777615547,
+              221.70475497841835,
+              221.02044895291328,
+              221.04907780885696,
+              220.7375131547451,
+              221.33300825953484,
+              231.8294644355774,
+              227.52894461154938,
+              222.24483639001846
+            ]
+          }
+        }
+      },
+      "mixed": {
+        "compared_request_pairs": 30,
+        "text_and_token_ids_identical": true,
+        "max_top5_logprob_abs_diff": 0.0,
+        "prompt_tokens": [
+          74,
+          423,
+          899
+        ],
+        "output_tokens": [
+          14,
+          32,
+          32
+        ],
+        "timings": {
+          "baseline": {
+            "median_ms": 600.9573079645634,
+            "population_stddev_ms": 133.79615495231522,
+            "min_ms": 598.3824096620083,
+            "max_ms": 1049.0163937211037,
+            "samples_ms": [
+              600.7352508604527,
+              619.5434965193272,
+              598.3824096620083,
+              1049.0163937211037,
+              598.6440479755402,
+              599.3099734187126,
+              599.6119156479836,
+              605.4515279829502,
+              608.7102703750134,
+              601.1793650686741
+            ]
+          },
+          "compact": {
+            "median_ms": 588.479382917285,
+            "population_stddev_ms": 6.656849741017013,
+            "min_ms": 585.6043361127377,
+            "max_ms": 609.3372739851475,
+            "samples_ms": [
+              585.6043361127377,
+              586.064662784338,
+              587.3760730028152,
+              588.4349942207336,
+              587.1880128979683,
+              588.5237716138363,
+              609.3372739851475,
+              594.5639424026012,
+              590.4218479990959,
+              590.3141163289547
+            ]
+          }
+        }
+      }
+    },
+    "actual_encoder_runtime": [
+      {
+        "model_class": "AudioFlamingo3ForConditionalGeneration",
+        "encoder_class": "AudioFlamingo3Encoder",
+        "attention_backend": "sdpa"
+      }
+    ],
+    "captured_masks": {
+      "baseline": {
+        "forward_calls": 33,
+        "encoded_audio_chunks_including_warmups": 55,
+        "unique_shapes": [
+          [
+            1,
+            1,
+            1500,
+            1500
+          ],
+          [
+            3,
+            1,
+            1500,
+            1500
+          ]
+        ],
+        "bytes_per_audio_chunk": 4500000
+      },
+      "compact": {
+        "forward_calls": 33,
+        "encoded_audio_chunks_including_warmups": 55,
+        "unique_shapes": [
+          [
+            1,
+            1,
+            1,
+            1500
+          ],
+          [
+            3,
+            1,
+            1,
+            1500
+          ]
+        ],
+        "bytes_per_audio_chunk": 3000
+      }
+    },
+    "audio_seconds": [
+      2.0,
+      15.948,
+      35.0
+    ],
+    "limitations": "One speech recording plus repeated long speech; eager BF16 TP1 on A800, not a WER evaluation or an end-to-end speedup claim."
+  }
+}
