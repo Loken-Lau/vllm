@@ -1,0 +1,8 @@
+W1020 07:49:21.693000 2747690 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1020 07:49:21.694000 2747690 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1020 07:49:21.695000 2747690 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+{"batch_size": 1, "samples": 128, "max_abs_diff": 0.0, "exact_equal": true, "dense_repeat_max_abs_diff": 0.0}
+{"batch_size": 2, "samples": 128, "max_abs_diff": 0.0, "exact_equal": true, "dense_repeat_max_abs_diff": 0.0}
+{"batch_size": 4, "samples": 128, "max_abs_diff": 0.0, "exact_equal": true, "dense_repeat_max_abs_diff": 0.0}
+{"batch_size": 8, "samples": 128, "max_abs_diff": 0.0, "exact_equal": true, "dense_repeat_max_abs_diff": 0.0}
+{"batch_size": 16, "samples": 128, "max_abs_diff": 0.0, "exact_equal": true, "dense_repeat_max_abs_diff": 0.0}

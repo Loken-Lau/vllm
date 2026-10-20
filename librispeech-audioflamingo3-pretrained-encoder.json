@@ -1,0 +1,44 @@
+{
+  "model": "audioflamingo3",
+  "model_revision": "7d4bae64ee29878af6504ae6f6bb3e40492838ad",
+  "backend": "sdpa",
+  "dtype": "bfloat16",
+  "samples": 128,
+  "rows": [
+    {
+      "batch_size": 1,
+      "samples": 128,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "dense_repeat_max_abs_diff": 0.0
+    },
+    {
+      "batch_size": 2,
+      "samples": 128,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "dense_repeat_max_abs_diff": 0.0
+    },
+    {
+      "batch_size": 4,
+      "samples": 128,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "dense_repeat_max_abs_diff": 0.0
+    },
+    {
+      "batch_size": 8,
+      "samples": 128,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "dense_repeat_max_abs_diff": 0.0
+    },
+    {
+      "batch_size": 16,
+      "samples": 128,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "dense_repeat_max_abs_diff": 0.0
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "file": "librispeech-af3-original-diagnostics.json",
+    "model": "audioflamingo3",
+    "samples": 128,
+    "prompt_style": "original",
+    "speakers": 39,
+    "duration_min_seconds": 1.81,
+    "duration_max_seconds": 29.14,
+    "batch_sizes": {
+      "8": {
+        "equal_text_count": 128,
+        "equal_token_sequence_count": 128,
+        "variants": {
+          "baseline": {
+            "wer_percent": 38.907849829351534,
+            "word_errors": 1026,
+            "reference_words": 2637,
+            "batch_calls": 16,
+            "batch_mean_ms": 1088.2370132021606,
+            "batch_median_ms": 1013.7063656002283,
+            "batch_population_stddev_ms": 279.6424311747752,
+            "samples_per_second": 7.3513397384452395,
+            "cap_reached": false,
+            "max_output_tokens": 103,
+            "max_incremental_peak_bytes": 229255168,
+            "observed_encoder_batch_sizes": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          "compact": {
+            "wer_percent": 38.907849829351534,
+            "word_errors": 1026,
+            "reference_words": 2637,
+            "batch_calls": 16,
+            "batch_mean_ms": 1075.9677244350314,
+            "batch_median_ms": 1005.4487083107233,
+            "batch_population_stddev_ms": 271.6730003658737,
+            "samples_per_second": 7.435167262289987,
+            "cap_reached": false,
+            "max_output_tokens": 103,
+            "max_incremental_peak_bytes": 210413568,
+            "observed_encoder_batch_sizes": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        "mismatches": [],
+        "shared_prefix_max_top5_logprob_diff": 0.0,
+        "shared_prefix_compared_logprobs": 17325,
+        "shared_prefix_topk_set_differences": 0
+      },
+      "16": {
+        "equal_text_count": 125,
+        "equal_token_sequence_count": 125,
+        "variants": {
+          "baseline": {
+            "wer_percent": 39.666287447857414,
+            "word_errors": 1046,
+            "reference_words": 2637,
+            "batch_calls": 8,
+            "batch_mean_ms": 1583.1881193444133,
+            "batch_median_ms": 1517.8508274257183,
+            "batch_population_stddev_ms": 340.1391400948979,
+            "samples_per_second": 10.10619003800097,
+            "cap_reached": false,
+            "max_output_tokens": 113,
+            "max_incremental_peak_bytes": 510695424,
+            "observed_encoder_batch_sizes": [
+              1,
+              4,
+              5,
+              10,
+              11
+            ]
+          },
+          "compact": {
+            "wer_percent": 39.59044368600683,
+            "word_errors": 1044,
+            "reference_words": 2637,
+            "batch_calls": 8,
+            "batch_mean_ms": 1573.3755575492978,
+            "batch_median_ms": 1511.378187686205,
+            "batch_population_stddev_ms": 337.84608349843677,
+            "samples_per_second": 10.1692186097779,
+            "cap_reached": false,
+            "max_output_tokens": 113,
+            "max_incremental_peak_bytes": 461735424,
+            "observed_encoder_batch_sizes": [
+              1,
+              4,
+              5,
+              10,
+              11
+            ]
+          }
+        },
+        "mismatches": [
+          {
+            "id": "6829-68771-0000",
+            "first_differing_token_index": 1,
+            "baseline_text": "The transcription of the audio is 'so to the surprise of the democratic committee and all his friends mister hopkins announced that he would oppose forbes aggressive campaign with an equal aggressiveness and spend as many dollars in doing so as might be necessary'.",
+            "compact_text": "The Democratic Committee and Mister Hopkins' friends were surprised when Mister Hopkins announced that he would oppose Forbes' aggressive campaign with equal aggressiveness and spend as many dollars as necessary."
+          },
+          {
+            "id": "1320-122612-0013",
+            "first_differing_token_index": 1,
+            "baseline_text": "The sentence describes a group of people taking a portion of a circle that was drawn.",
+            "compact_text": "The spoken content of the audio is 'a circle of a few hundred feet in circumference was drawn and each of the party took a segment for his portion'."
+          },
+          {
+            "id": "5639-40744-0007",
+            "first_differing_token_index": 5,
+            "baseline_text": "The sentence describes Rudolph having Leucadia safe in his custody and in his own apartment.",
+            "compact_text": "The sentence describes Rudolpho having Leucadia safe in his custody and in his own apartment."
+          }
+        ],
+        "shared_prefix_max_top5_logprob_diff": 0.5,
+        "shared_prefix_compared_logprobs": 17025,
+        "shared_prefix_topk_set_differences": 25
+      }
+    }
+  }
+]

@@ -1,0 +1,504 @@
+[
+  {
+    "file": "librispeech-audioflamingo3-128-final.json",
+    "model": "audioflamingo3",
+    "samples": 128,
+    "prompt_style": "transcript_only",
+    "speakers": 39,
+    "duration_min_seconds": 1.81,
+    "duration_max_seconds": 29.14,
+    "batch_sizes": {
+      "1": {
+        "equal_text_count": 128,
+        "equal_token_sequence_count": 128,
+        "variants": {
+          "baseline": {
+            "wer_percent": 2.3511566173682215,
+            "word_errors": 62,
+            "reference_words": 2637,
+            "batch_calls": 128,
+            "batch_mean_ms": 360.07980711292475,
+            "batch_median_ms": 299.67090860009193,
+            "batch_population_stddev_ms": 219.39880084499964,
+            "samples_per_second": 2.777162118636632,
+            "cap_reached": false,
+            "max_output_tokens": 97,
+            "max_incremental_peak_bytes": 110016512,
+            "observed_encoder_batch_sizes": [
+              1
+            ]
+          },
+          "compact": {
+            "wer_percent": 2.3511566173682215,
+            "word_errors": 62,
+            "reference_words": 2637,
+            "batch_calls": 128,
+            "batch_mean_ms": 358.83309089695103,
+            "batch_median_ms": 299.1201598197222,
+            "batch_population_stddev_ms": 218.2055329855974,
+            "samples_per_second": 2.78681098641256,
+            "cap_reached": false,
+            "max_output_tokens": 97,
+            "max_incremental_peak_bytes": 109751296,
+            "observed_encoder_batch_sizes": [
+              1
+            ]
+          }
+        },
+        "mismatches": [],
+        "shared_prefix_max_top5_logprob_diff": 0.0,
+        "shared_prefix_compared_logprobs": 15310,
+        "shared_prefix_topk_set_differences": 0
+      },
+      "2": {
+        "equal_text_count": 128,
+        "equal_token_sequence_count": 128,
+        "variants": {
+          "baseline": {
+            "wer_percent": 2.3511566173682215,
+            "word_errors": 62,
+            "reference_words": 2637,
+            "batch_calls": 64,
+            "batch_mean_ms": 512.928634765558,
+            "batch_median_ms": 425.1431245356798,
+            "batch_population_stddev_ms": 245.11584602878244,
+            "samples_per_second": 3.8991779059364298,
+            "cap_reached": false,
+            "max_output_tokens": 97,
+            "max_incremental_peak_bytes": 103787520,
+            "observed_encoder_batch_sizes": [
+              1
+            ]
+          },
+          "compact": {
+            "wer_percent": 2.3511566173682215,
+            "word_errors": 62,
+            "reference_words": 2637,
+            "batch_calls": 64,
+            "batch_mean_ms": 510.83425793331116,
+            "batch_median_ms": 423.83457347750664,
+            "batch_population_stddev_ms": 244.91331640812115,
+            "samples_per_second": 3.915164202360715,
+            "cap_reached": false,
+            "max_output_tokens": 97,
+            "max_incremental_peak_bytes": 103137280,
+            "observed_encoder_batch_sizes": [
+              1
+            ]
+          }
+        },
+        "mismatches": [],
+        "shared_prefix_max_top5_logprob_diff": 0.0,
+        "shared_prefix_compared_logprobs": 15310,
+        "shared_prefix_topk_set_differences": 0
+      },
+      "4": {
+        "equal_text_count": 128,
+        "equal_token_sequence_count": 128,
+        "variants": {
+          "baseline": {
+            "wer_percent": 2.3511566173682215,
+            "word_errors": 62,
+            "reference_words": 2637,
+            "batch_calls": 32,
+            "batch_mean_ms": 730.9734361479059,
+            "batch_median_ms": 724.0728847682476,
+            "batch_population_stddev_ms": 258.13868438513606,
+            "samples_per_second": 5.472155077316156,
+            "cap_reached": false,
+            "max_output_tokens": 97,
+            "max_incremental_peak_bytes": 151890944,
+            "observed_encoder_batch_sizes": [
+              1,
+              3
+            ]
+          },
+          "compact": {
+            "wer_percent": 2.3511566173682215,
+            "word_errors": 62,
+            "reference_words": 2637,
+            "batch_calls": 32,
+            "batch_mean_ms": 727.4176237406209,
+            "batch_median_ms": 715.4325619339943,
+            "batch_population_stddev_ms": 257.27458748277417,
+            "samples_per_second": 5.498904438733121,
+            "cap_reached": false,
+            "max_output_tokens": 97,
+            "max_incremental_peak_bytes": 153114624,
+            "observed_encoder_batch_sizes": [
+              1,
+              3
+            ]
+          }
+        },
+        "mismatches": [],
+        "shared_prefix_max_top5_logprob_diff": 0.0,
+        "shared_prefix_compared_logprobs": 15335,
+        "shared_prefix_topk_set_differences": 0
+      },
+      "8": {
+        "equal_text_count": 127,
+        "equal_token_sequence_count": 127,
+        "variants": {
+          "baseline": {
+            "wer_percent": 2.3511566173682215,
+            "word_errors": 62,
+            "reference_words": 2637,
+            "batch_calls": 16,
+            "batch_mean_ms": 1083.9026144240052,
+            "batch_median_ms": 954.2623683810234,
+            "batch_population_stddev_ms": 228.64855503768194,
+            "samples_per_second": 7.380736879439364,
+            "cap_reached": false,
+            "max_output_tokens": 97,
+            "max_incremental_peak_bytes": 235968512,
+            "observed_encoder_batch_sizes": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          "compact": {
+            "wer_percent": 2.3132347364429275,
+            "word_errors": 61,
+            "reference_words": 2637,
+            "batch_calls": 16,
+            "batch_mean_ms": 1077.9841849580407,
+            "batch_median_ms": 953.8878351449966,
+            "batch_population_stddev_ms": 225.92744968914263,
+            "samples_per_second": 7.4212591535481485,
+            "cap_reached": false,
+            "max_output_tokens": 97,
+            "max_incremental_peak_bytes": 214668288,
+            "observed_encoder_batch_sizes": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        "mismatches": [
+          {
+            "id": "7021-85628-0000",
+            "first_differing_token_index": 0,
+            "baseline_text": "anders cared nothing about that.",
+            "compact_text": "but anders cared nothing about that"
+          }
+        ],
+        "shared_prefix_max_top5_logprob_diff": 0.3685789108276367,
+        "shared_prefix_compared_logprobs": 15238,
+        "shared_prefix_topk_set_differences": 51
+      },
+      "16": {
+        "equal_text_count": 128,
+        "equal_token_sequence_count": 128,
+        "variants": {
+          "baseline": {
+            "wer_percent": 2.3132347364429275,
+            "word_errors": 61,
+            "reference_words": 2637,
+            "batch_calls": 8,
+            "batch_mean_ms": 1527.1476483903825,
+            "batch_median_ms": 1508.5352566093206,
+            "batch_population_stddev_ms": 221.42253156149087,
+            "samples_per_second": 10.477048513851322,
+            "cap_reached": false,
+            "max_output_tokens": 97,
+            "max_incremental_peak_bytes": 508777472,
+            "observed_encoder_batch_sizes": [
+              1,
+              4,
+              5,
+              10,
+              11
+            ]
+          },
+          "compact": {
+            "wer_percent": 2.3132347364429275,
+            "word_errors": 61,
+            "reference_words": 2637,
+            "batch_calls": 8,
+            "batch_mean_ms": 1520.3717574477196,
+            "batch_median_ms": 1498.3983784914017,
+            "batch_population_stddev_ms": 224.50732147312425,
+            "samples_per_second": 10.523741921422916,
+            "cap_reached": false,
+            "max_output_tokens": 97,
+            "max_incremental_peak_bytes": 462650880,
+            "observed_encoder_batch_sizes": [
+              1,
+              4,
+              5,
+              10,
+              11
+            ]
+          }
+        },
+        "mismatches": [],
+        "shared_prefix_max_top5_logprob_diff": 0.24996089935302734,
+        "shared_prefix_compared_logprobs": 15306,
+        "shared_prefix_topk_set_differences": 14
+      }
+    }
+  },
+  {
+    "file": "librispeech-qwen2_audio-128-final.json",
+    "model": "qwen2_audio",
+    "samples": 128,
+    "prompt_style": "transcript_only",
+    "speakers": 39,
+    "duration_min_seconds": 1.81,
+    "duration_max_seconds": 29.14,
+    "batch_sizes": {
+      "1": {
+        "equal_text_count": 128,
+        "equal_token_sequence_count": 128,
+        "variants": {
+          "baseline": {
+            "wer_percent": 2.6924535456958667,
+            "word_errors": 71,
+            "reference_words": 2637,
+            "batch_calls": 128,
+            "batch_mean_ms": 375.6620911299251,
+            "batch_median_ms": 315.05294516682625,
+            "batch_population_stddev_ms": 212.5524225669268,
+            "samples_per_second": 2.6619667611181552,
+            "cap_reached": false,
+            "max_output_tokens": 92,
+            "max_incremental_peak_bytes": 76018176,
+            "observed_encoder_batch_sizes": [
+              1
+            ]
+          },
+          "compact": {
+            "wer_percent": 2.6924535456958667,
+            "word_errors": 71,
+            "reference_words": 2637,
+            "batch_calls": 128,
+            "batch_mean_ms": 369.00638378574513,
+            "batch_median_ms": 299.8708914965391,
+            "batch_population_stddev_ms": 210.0727864643972,
+            "samples_per_second": 2.7099802169835265,
+            "cap_reached": false,
+            "max_output_tokens": 92,
+            "max_incremental_peak_bytes": 76018176,
+            "observed_encoder_batch_sizes": [
+              1
+            ]
+          }
+        },
+        "mismatches": [],
+        "shared_prefix_max_top5_logprob_diff": 0.0,
+        "shared_prefix_compared_logprobs": 16135,
+        "shared_prefix_topk_set_differences": 0
+      },
+      "2": {
+        "equal_text_count": 128,
+        "equal_token_sequence_count": 128,
+        "variants": {
+          "baseline": {
+            "wer_percent": 2.7303754266211606,
+            "word_errors": 72,
+            "reference_words": 2637,
+            "batch_calls": 64,
+            "batch_mean_ms": 516.8630706612021,
+            "batch_median_ms": 444.501431658864,
+            "batch_population_stddev_ms": 237.35172680363615,
+            "samples_per_second": 3.8694968039436066,
+            "cap_reached": false,
+            "max_output_tokens": 92,
+            "max_incremental_peak_bytes": 69165056,
+            "observed_encoder_batch_sizes": [
+              1
+            ]
+          },
+          "compact": {
+            "wer_percent": 2.7303754266211606,
+            "word_errors": 72,
+            "reference_words": 2637,
+            "batch_calls": 64,
+            "batch_mean_ms": 516.4508064626716,
+            "batch_median_ms": 441.7991656810045,
+            "batch_population_stddev_ms": 238.07837972094447,
+            "samples_per_second": 3.8725856847791706,
+            "cap_reached": false,
+            "max_output_tokens": 92,
+            "max_incremental_peak_bytes": 68039680,
+            "observed_encoder_batch_sizes": [
+              1
+            ]
+          }
+        },
+        "mismatches": [],
+        "shared_prefix_max_top5_logprob_diff": 0.0,
+        "shared_prefix_compared_logprobs": 16145,
+        "shared_prefix_topk_set_differences": 0
+      },
+      "4": {
+        "equal_text_count": 128,
+        "equal_token_sequence_count": 128,
+        "variants": {
+          "baseline": {
+            "wer_percent": 2.6545316647705723,
+            "word_errors": 70,
+            "reference_words": 2637,
+            "batch_calls": 32,
+            "batch_mean_ms": 721.7355468310416,
+            "batch_median_ms": 701.4204133301973,
+            "batch_population_stddev_ms": 236.80591456623628,
+            "samples_per_second": 5.542196193000316,
+            "cap_reached": false,
+            "max_output_tokens": 92,
+            "max_incremental_peak_bytes": 155638784,
+            "observed_encoder_batch_sizes": [
+              1,
+              3
+            ]
+          },
+          "compact": {
+            "wer_percent": 2.6545316647705723,
+            "word_errors": 70,
+            "reference_words": 2637,
+            "batch_calls": 32,
+            "batch_mean_ms": 717.9421407636255,
+            "batch_median_ms": 683.5466846823692,
+            "batch_population_stddev_ms": 237.9297936723716,
+            "samples_per_second": 5.57147961219476,
+            "cap_reached": false,
+            "max_output_tokens": 92,
+            "max_incremental_peak_bytes": 142158848,
+            "observed_encoder_batch_sizes": [
+              1,
+              3
+            ]
+          }
+        },
+        "mismatches": [],
+        "shared_prefix_max_top5_logprob_diff": 0.0,
+        "shared_prefix_compared_logprobs": 16115,
+        "shared_prefix_topk_set_differences": 0
+      },
+      "8": {
+        "equal_text_count": 125,
+        "equal_token_sequence_count": 125,
+        "variants": {
+          "baseline": {
+            "wer_percent": 2.6545316647705723,
+            "word_errors": 70,
+            "reference_words": 2637,
+            "batch_calls": 16,
+            "batch_mean_ms": 1083.1411767285317,
+            "batch_median_ms": 979.6784035861492,
+            "batch_population_stddev_ms": 256.5936779565591,
+            "samples_per_second": 7.385925465563798,
+            "cap_reached": false,
+            "max_output_tokens": 92,
+            "max_incremental_peak_bytes": 260046336,
+            "observed_encoder_batch_sizes": [
+              1,
+              2,
+              5
+            ]
+          },
+          "compact": {
+            "wer_percent": 2.6166097838452784,
+            "word_errors": 69,
+            "reference_words": 2637,
+            "batch_calls": 16,
+            "batch_mean_ms": 1054.8831515479833,
+            "batch_median_ms": 978.8899011909962,
+            "batch_population_stddev_ms": 210.78272992326896,
+            "samples_per_second": 7.583778343848262,
+            "cap_reached": false,
+            "max_output_tokens": 92,
+            "max_incremental_peak_bytes": 232377856,
+            "observed_encoder_batch_sizes": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        "mismatches": [
+          {
+            "id": "2961-960-0019",
+            "first_differing_token_index": 10,
+            "baseline_text": "He could write in one style but not in another and the Greek language had not as yet been fashioned by any poet or philosopher to describe physical phenomena.",
+            "compact_text": "He could write in one style but not in another, and the Greek language had not as yet been fashioned by any poet or philosopher to describe physical phenomena."
+          },
+          {
+            "id": "8463-294828-0010",
+            "first_differing_token_index": 14,
+            "baseline_text": "Never did he object to buckling up his suitcase for any country whatever China or the Congo no matter how far off it was.",
+            "compact_text": "Never did he object to buckling up his suitcase for any country whatever, China or the Congo, no matter how far off it was."
+          },
+          {
+            "id": "1221-135767-0000",
+            "first_differing_token_index": 3,
+            "baseline_text": "Hester Pynne went one day to the mansion of Governor Bellingham with a pair of gloves which she had fringed and embroidered to his order and which were to be worn on some great occasion of state for though the chances of a popular election had caused this former ruler to descend a step or two from the highest rank he still held an honourable and influential place among the colonial magistracy.",
+            "compact_text": "Hester Prynne went one day to the mansion of Governor Bellingham with a pair of gloves which she had fringed and embroidered to his order and which were to be worn on some great occasion of state for though the chances of a popular election had caused this former ruler to descend a step or two from the highest rank he still held an honourable and influential place among the colonial magistracy."
+          }
+        ],
+        "shared_prefix_max_top5_logprob_diff": 0.375,
+        "shared_prefix_compared_logprobs": 15493,
+        "shared_prefix_topk_set_differences": 37
+      },
+      "16": {
+        "equal_text_count": 128,
+        "equal_token_sequence_count": 128,
+        "variants": {
+          "baseline": {
+            "wer_percent": 2.7303754266211606,
+            "word_errors": 72,
+            "reference_words": 2637,
+            "batch_calls": 8,
+            "batch_mean_ms": 1521.4142622426152,
+            "batch_median_ms": 1516.4299122989178,
+            "batch_population_stddev_ms": 179.64040283626906,
+            "samples_per_second": 10.516530833893635,
+            "cap_reached": false,
+            "max_output_tokens": 92,
+            "max_incremental_peak_bytes": 551896576,
+            "observed_encoder_batch_sizes": [
+              1,
+              4,
+              5,
+              10,
+              11
+            ]
+          },
+          "compact": {
+            "wer_percent": 2.7303754266211606,
+            "word_errors": 72,
+            "reference_words": 2637,
+            "batch_calls": 8,
+            "batch_mean_ms": 1509.4334087334573,
+            "batch_median_ms": 1513.7384925037622,
+            "batch_population_stddev_ms": 181.4113302490331,
+            "samples_per_second": 10.600003887170722,
+            "cap_reached": false,
+            "max_output_tokens": 92,
+            "max_incremental_peak_bytes": 507341824,
+            "observed_encoder_batch_sizes": [
+              1,
+              4,
+              5,
+              10,
+              11
+            ]
+          }
+        },
+        "mismatches": [],
+        "shared_prefix_max_top5_logprob_diff": 0.1875,
+        "shared_prefix_compared_logprobs": 16107,
+        "shared_prefix_topk_set_differences": 3
+      }
+    }
+  }
+]

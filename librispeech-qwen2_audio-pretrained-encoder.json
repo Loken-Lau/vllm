@@ -1,0 +1,44 @@
+{
+  "model": "qwen2_audio",
+  "model_revision": "0a095220c30b7b31434169c3086508ef3ea5bf0a",
+  "backend": "sdpa",
+  "dtype": "bfloat16",
+  "samples": 128,
+  "rows": [
+    {
+      "batch_size": 1,
+      "samples": 128,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "dense_repeat_max_abs_diff": 0.0
+    },
+    {
+      "batch_size": 2,
+      "samples": 128,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "dense_repeat_max_abs_diff": 0.0
+    },
+    {
+      "batch_size": 4,
+      "samples": 128,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "dense_repeat_max_abs_diff": 0.0
+    },
+    {
+      "batch_size": 8,
+      "samples": 128,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "dense_repeat_max_abs_diff": 0.0
+    },
+    {
+      "batch_size": 16,
+      "samples": 128,
+      "max_abs_diff": 0.0,
+      "exact_equal": true,
+      "dense_repeat_max_abs_diff": 0.0
+    }
+  ]
+}
