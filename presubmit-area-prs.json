@@ -1,0 +1,1 @@
+[{"number":62494,"title":"[Bugfix] Quantize Qwen3-Omni audio linears and drop the tower host sync","url":"https://github.com/vllm-project/vllm/pull/62494"},{"number":44518,"title":"[Model] Use native packed audio attention for Qwen2.5-Omni to remove standalone flash-attn dependency","url":"https://github.com/vllm-project/vllm/pull/44518"}]

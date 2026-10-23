@@ -1,0 +1,288 @@
+{
+  "model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+  "revision": "26291f793822fb6be9555850f06dfe95f2d7e695",
+  "scope": "full 32-layer pretrained audio tower, not full LLM",
+  "shard_sha256": "f95d142b727fbd0698f0ed9478e222d4f29467df855e21862e46bd1401049065",
+  "baseline": "f3871c3cbf8a608f7ee833ec4c2c5277f77bee41",
+  "source_sha256": "17f6770c91b09e7c014999d5daf4a86aeff8c592a8b3d39c14d01c2b35e1ad77",
+  "torch": "2.14.0+cu130",
+  "device": "NVIDIA A800 80GB PCIe",
+  "unadapted": [
+    {
+      "lengths": [
+        1
+      ],
+      "shape": [
+        1,
+        2048
+      ],
+      "equal": true,
+      "max_abs_diff": 0.0,
+      "cosine_similarity": 0.9999998807907104
+    },
+    {
+      "lengths": [
+        99
+      ],
+      "shape": [
+        13,
+        2048
+      ],
+      "equal": true,
+      "max_abs_diff": 0.0,
+      "cosine_similarity": 1.0
+    },
+    {
+      "lengths": [
+        100
+      ],
+      "shape": [
+        13,
+        2048
+      ],
+      "equal": true,
+      "max_abs_diff": 0.0,
+      "cosine_similarity": 1.0
+    },
+    {
+      "lengths": [
+        101
+      ],
+      "shape": [
+        14,
+        2048
+      ],
+      "equal": false,
+      "max_abs_diff": 0.001708984375,
+      "cosine_similarity": 0.9999310970306396
+    },
+    {
+      "lengths": [
+        200
+      ],
+      "shape": [
+        26,
+        2048
+      ],
+      "equal": true,
+      "max_abs_diff": 0.0,
+      "cosine_similarity": 1.0
+    },
+    {
+      "lengths": [
+        201
+      ],
+      "shape": [
+        27,
+        2048
+      ],
+      "equal": true,
+      "max_abs_diff": 0.0,
+      "cosine_similarity": 1.0
+    },
+    {
+      "lengths": [
+        1,
+        100
+      ],
+      "shape": [
+        14,
+        2048
+      ],
+      "equal": false,
+      "max_abs_diff": 0.001953125,
+      "cosine_similarity": 0.9999322891235352
+    },
+    {
+      "lengths": [
+        101,
+        201
+      ],
+      "shape": [
+        41,
+        2048
+      ],
+      "equal": false,
+      "max_abs_diff": 0.001983642578125,
+      "cosine_similarity": 0.999907910823822
+    },
+    {
+      "lengths": [
+        799,
+        801
+      ],
+      "shape": [
+        209,
+        2048
+      ],
+      "equal": true,
+      "max_abs_diff": 0.0,
+      "cosine_similarity": 0.9999999403953552
+    }
+  ],
+  "lora": [
+    {
+      "projected_rows": 65,
+      "exact": false,
+      "max_abs_error": 0.5,
+      "adapter_has_effect": true,
+      "variant": "baseline",
+      "lengths": [
+        101,
+        201
+      ],
+      "adapters": [
+        1,
+        1
+      ],
+      "valid_rows": 41,
+      "output_shape": [
+        41,
+        2048
+      ]
+    },
+    {
+      "projected_rows": 41,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "adapter_has_effect": true,
+      "variant": "candidate",
+      "lengths": [
+        101,
+        201
+      ],
+      "adapters": [
+        1,
+        1
+      ],
+      "valid_rows": 41,
+      "output_shape": [
+        41,
+        2048
+      ]
+    },
+    {
+      "projected_rows": 65,
+      "exact": false,
+      "max_abs_error": 0.5,
+      "adapter_has_effect": true,
+      "variant": "baseline",
+      "lengths": [
+        101,
+        201
+      ],
+      "adapters": [
+        1,
+        2
+      ],
+      "valid_rows": 41,
+      "output_shape": [
+        41,
+        2048
+      ]
+    },
+    {
+      "projected_rows": 41,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "adapter_has_effect": true,
+      "variant": "candidate",
+      "lengths": [
+        101,
+        201
+      ],
+      "adapters": [
+        1,
+        2
+      ],
+      "valid_rows": 41,
+      "output_shape": [
+        41,
+        2048
+      ]
+    },
+    {
+      "projected_rows": 65,
+      "exact": false,
+      "max_abs_error": 0.5,
+      "adapter_has_effect": true,
+      "variant": "baseline",
+      "lengths": [
+        201,
+        101
+      ],
+      "adapters": [
+        2,
+        1
+      ],
+      "valid_rows": 41,
+      "output_shape": [
+        41,
+        2048
+      ]
+    },
+    {
+      "projected_rows": 41,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "adapter_has_effect": true,
+      "variant": "candidate",
+      "lengths": [
+        201,
+        101
+      ],
+      "adapters": [
+        2,
+        1
+      ],
+      "valid_rows": 41,
+      "output_shape": [
+        41,
+        2048
+      ]
+    },
+    {
+      "projected_rows": 26,
+      "exact": false,
+      "max_abs_error": 0.5,
+      "adapter_has_effect": true,
+      "variant": "baseline",
+      "lengths": [
+        1,
+        100
+      ],
+      "adapters": [
+        1,
+        2
+      ],
+      "valid_rows": 14,
+      "output_shape": [
+        14,
+        2048
+      ]
+    },
+    {
+      "projected_rows": 14,
+      "exact": true,
+      "max_abs_error": 0.0,
+      "adapter_has_effect": true,
+      "variant": "candidate",
+      "lengths": [
+        1,
+        100
+      ],
+      "adapters": [
+        1,
+        2
+      ],
+      "valid_rows": 14,
+      "output_shape": [
+        14,
+        2048
+      ]
+    }
+  ],
+  "loaded_parameters": 397,
+  "checkpoint_tensors": 525,
+  "attention_backend": "AttentionBackendEnum.FLASH_ATTN"
+}

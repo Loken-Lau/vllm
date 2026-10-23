@@ -1,0 +1,34 @@
+{
+  "reference_words": 1284,
+  "cases": {
+    "1": {
+      "baseline": {
+        "edits": 32,
+        "words": 1284,
+        "wer": 0.024922118380062305
+      },
+      "fixed": {
+        "edits": 32,
+        "words": 1284,
+        "wer": 0.024922118380062305
+      },
+      "normalized_pairs_equal": 64
+    },
+    "8": {
+      "baseline": {
+        "edits": 32,
+        "words": 1284,
+        "wer": 0.024922118380062305
+      },
+      "fixed": {
+        "edits": 32,
+        "words": 1284,
+        "wer": 0.024922118380062305
+      },
+      "normalized_pairs_equal": 64
+    }
+  },
+  "checkpoint": {
+    "model.safetensors": "79d6cbd4c98c7bbffe9db2edac07f56cd6637d0d5944b27f6c2b8353840323ea"
+  }
+}

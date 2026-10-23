@@ -1,0 +1,21 @@
+commit 6269a7fd322444b4672403453f6f61166982822e
+Author: Liu Jinhao <136283190+Loken-Lau@users.noreply.github.com>
+Commit: Liu Jinhao <136283190+Loken-Lau@users.noreply.github.com>
+
+    [Doc][LoRA] Clarify experimental multimodal tower support
+    
+    Link the feature compatibility note to tower and connector support, and distinguish enabling existing support from implementing a new model.
+    
+    Co-authored-by: OpenAI Codex <noreply@openai.com>
+    Signed-off-by: Liu Jinhao <136283190+Loken-Lau@users.noreply.github.com>
+
+commit de5a2cef28d40a3284e55b9765bdce22649ebe4c
+Author: Liu Jinhao <136283190+Loken-Lau@users.noreply.github.com>
+Commit: Liu Jinhao <136283190+Loken-Lau@users.noreply.github.com>
+
+    [Bugfix][LoRA] Align Qwen3 audio projections with valid token mappings
+    
+    Gather valid audio positions before conv_out so partial chunk padding cannot consume tower LoRA mappings. Preserve within-chunk positional indices and attention segmentation.
+    
+    Co-authored-by: OpenAI Codex <noreply@openai.com>
+    Signed-off-by: Liu Jinhao <136283190+Loken-Lau@users.noreply.github.com>
