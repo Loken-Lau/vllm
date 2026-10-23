@@ -19,7 +19,7 @@ index 568f8a1..776d517 100644
        - vllm/platforms/rocm.py
        depends_on:
 diff --git a/docs/features/README.md b/docs/features/README.md
-index 1df8960..cc3b417 100644
+index 1df8960..57ed77c 100644
 --- a/docs/features/README.md
 +++ b/docs/features/README.md
 @@ -55,7 +55,7 @@ th:not(:first-child) {
@@ -27,7 +27,7 @@ index 1df8960..cc3b417 100644
  
  \* Chunked prefill and prefix caching are only applicable to last-token or all pooling with causal attention.  
 -<sup>^</sup> LoRA is only applicable to the language backbone of multimodal models.  
-+<sup>^</sup> LoRA supports the language backbone of multimodal models, with experimental [tower and connector support](lora.md#lora-support-for-tower-and-connector-of-multi-modal-model) for selected models.  
++<sup>^</sup> LoRA supports the language backbone of multimodal models, with experimental [tower and connector support](lora.md#lora-support-for-tower-and-connector-of-multi-modal-model) for selected models.
  
  ### Feature x Hardware
  

@@ -1,14 +1,14 @@
 {
-  "source_commit": "6269a7fd322444b4672403453f6f61166982822e",
+  "source_commit": "b38f8757a9f5ea58f40c5d5e3349d0eeb40c02c4",
   "implementation_commit": "de5a2cef28d40a3284e55b9765bdce22649ebe4c",
   "upstream_baseline": "f3871c3cbf8a608f7ee833ec4c2c5277f77bee41",
   "files": {
     "experiment-report.md": "d544051cf9bd500edc3db23f5ba69e247f1ab7b72839782328d18d877e9e0a85",
     "REPRODUCE.md": "a33e25cdc185e3aad7ac90aef88091e371e58a62eff02e9150d28499f6cfc21c",
     "pr-checklist-review.md": "2edd610ee6ac86caef1dd548ef427c76c1c52b25119ce417bc74e8e13301817b",
-    "source-commit.txt": "2127fbdaf988f20b3fd567a4c02e369858a8f1c8df1d4507f7e09a956101946c",
+    "source-commit.txt": "808abde92178b121fd730d1a4a129b52e72237c465025cce840f7903968a96a2",
     "source-commit.log": "32dcd319bbb605b59bb5dfba173b730ec9d7811e116627fc648b187af658637b",
-    "full-change.patch": "3b839ed127496db0f2160f292aea147c0656718ad9c58e4a4515e6f249c813bf",
+    "full-change.patch": "29b5521d207269626e86d498d4c9c3c10fd343f0202c1bca73eab57d9b035452",
     "production-final.patch": "f69c24e59ff1e190c66d6008ebc385160b8657fcd94fd3cd66db707ed22808bb",
     "eval_asr_lora.py": "1c76224ccd911b59939f1894293e9a0679678d9c4481ec1a6bfa27bf06fdcdae",
     "native-lora-routing.json": "c3cd3e7e1b5eb3d8499e6f05cfef90f630c402bf39f145d62b7761764a8337ca",
@@ -39,6 +39,8 @@
     "presubmit-issue-prs.json": "80e51c0e68a1e169fe5df4b8065eb3276363375899868f8d0e5e4ec5dd11cd7e",
     "presubmit-area-prs.json": "43dbd9b67635fde52845f4ac5af6364595364f3e005e5a037e267bebcae1d10c",
     "docs-pre-commit.log": "069cb4cf81b52ffd9e962e9bc3f7b9258fceab1389bf3cc05ebbc44b4ad1f276",
-    "docs-commit.log": "62e302d475f953dc67429d4f8fc5dbdcd3a5c472ab1c5690808ea0adb8860a5d"
+    "docs-commit.log": "62e302d475f953dc67429d4f8fc5dbdcd3a5c472ab1c5690808ea0adb8860a5d",
+    "docs-whitespace-commit.log": "2eced514b5b8481e64e65a59c18d2167aa2d604f6ed4c5f4d017c65f97ad2a9d",
+    "docs-discovery.md": "e4c1409071e4ec05b4df1eae7e08fde2e11546af9509e607d637611aa693fbcf"
   }
 }

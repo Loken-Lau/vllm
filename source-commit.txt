@@ -1,3 +1,12 @@
+commit b38f8757a9f5ea58f40c5d5e3349d0eeb40c02c4
+Author: Liu Jinhao <136283190+Loken-Lau@users.noreply.github.com>
+Commit: Liu Jinhao <136283190+Loken-Lau@users.noreply.github.com>
+
+    [Doc][LoRA] Remove trailing whitespace from the feature note
+    
+    Co-authored-by: OpenAI Codex <noreply@openai.com>
+    Signed-off-by: Liu Jinhao <136283190+Loken-Lau@users.noreply.github.com>
+
 commit 6269a7fd322444b4672403453f6f61166982822e
 Author: Liu Jinhao <136283190+Loken-Lau@users.noreply.github.com>
 Commit: Liu Jinhao <136283190+Loken-Lau@users.noreply.github.com>
