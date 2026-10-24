@@ -1,11 +1,25 @@
 # Final PR review
 
-Implementation commit: `f407e07537269ea74468e0073675bcf0bc044bdb`.
+Publication commit: `a7f47029d07f20ecd68ae6dd6b272eb10e2071fc`, parent
+`08aa305fb5c56d66566f98f55d51a39b43af936f`.
 
-The PR is based on vLLM `49d634bd6a3dc7433d8fb464821c95c76db85350`.
+Fully tested target-equivalent snapshot: `f407e07537269ea74468e0073675bcf0bc044bdb`,
+based on vLLM `49d634bd6a3dc7433d8fb464821c95c76db85350`.
 The previous experiments used `e2b67231`; the 32 intervening upstream commits
 did not modify any file edited by this PR. All five implementation files are
 identical to the earlier tested implementation.
+
+The publication branch excludes an unrelated upstream workflow update, avoiding
+an additional workflow authorization requirement. All nine edited files are
+byte-identical between the publication commit and the fully tested snapshot.
+Applying the feature patch cleanly to target `49d634bd` yields the exact fully
+tested tree `04c0a2c1084f353bd82476e1fa5d23fd8deac8eb` (`merge-tree-proof.json`).
+
+Additional validation on the final publication parent:
+
+- `compatible-base-unit.log`: **339 passed, 1 existing xfailed**, 26 warnings.
+- `compatible-base-http.log`: **10 passed, 40 deselected**, all new real-model
+  HTTP cases, in 59.91s.
 
 ## Review findings addressed
 

@@ -1,0 +1,8 @@
+{
+  "target": "49d634bd6a3dc7433d8fb464821c95c76db85350",
+  "feature_commit": "a7f47029d07f20ecd68ae6dd6b272eb10e2071fc",
+  "method": "Apply feature diff to target index without changes to working tree",
+  "prospective_tree": "04c0a2c1084f353bd82476e1fa5d23fd8deac8eb",
+  "fully_tested_tree": "04c0a2c1084f353bd82476e1fa5d23fd8deac8eb",
+  "identical": true
+}
