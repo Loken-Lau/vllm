@@ -1,0 +1,12 @@
+Running 261 items in this shard
+................................................................x....... [ 27%]
+........................................................................ [ 55%]
+........................................................................ [ 82%]
+.............................................                            [100%]
+=============================== warnings summary ===============================
+tests/parser/test_harmony.py: 26 warnings
+  /path/to/workspace/opensource/vllm/.venv/lib/python3.12/site-packages/xgrammar/matcher.py:262: DeprecationWarning: max_rollback_tokens is deprecated. You don't need to set it and it's always unlimited (-1).
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+260 passed, 1 xfailed, 26 warnings in 73.86s (0:01:13)

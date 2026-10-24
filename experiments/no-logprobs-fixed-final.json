@@ -1,0 +1,290 @@
+[
+  {
+    "source": "engine-pipeline.raw-0.json",
+    "chunk_size": 1,
+    "output": [
+      {
+        "summary": [],
+        "type": "reasoning",
+        "content": [
+          {
+            "text": "We need to respond with a short sentence in Chinese that says hello. The user: \"Say hello in Chinese in one short sentence.\" So we can say \"你好！\" or \"您好！\" or \"嗨！\" but \"你好\" is standard. So answer: \"你好！\"",
+            "type": "reasoning_text"
+          }
+        ],
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "content": [
+          {
+            "annotations": [],
+            "text": "你好！",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ]
+  },
+  {
+    "source": "engine-pipeline.raw-0.json",
+    "chunk_size": 7,
+    "output": [
+      {
+        "summary": [],
+        "type": "reasoning",
+        "content": [
+          {
+            "text": "We need to respond with a short sentence in Chinese that says hello. The user: \"Say hello in Chinese in one short sentence.\" So we can say \"你好！\" or \"您好！\" or \"嗨！\" but \"你好\" is standard. So answer: \"你好！\"",
+            "type": "reasoning_text"
+          }
+        ],
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "content": [
+          {
+            "annotations": [],
+            "text": "你好！",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ]
+  },
+  {
+    "source": "engine-pipeline.raw-0.json",
+    "chunk_size": 1000,
+    "output": [
+      {
+        "summary": [],
+        "type": "reasoning",
+        "content": [
+          {
+            "text": "We need to respond with a short sentence in Chinese that says hello. The user: \"Say hello in Chinese in one short sentence.\" So we can say \"你好！\" or \"您好！\" or \"嗨！\" but \"你好\" is standard. So answer: \"你好！\"",
+            "type": "reasoning_text"
+          }
+        ],
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "content": [
+          {
+            "annotations": [],
+            "text": "你好！",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ]
+  },
+  {
+    "source": "engine-pipeline.raw-2.json",
+    "chunk_size": 1,
+    "output": [
+      {
+        "summary": [],
+        "type": "reasoning",
+        "content": [
+          {
+            "text": "User says: \"Copy exactly: 你好，世界！🌍🫠\". They want me to copy exactly that string. So I should output exactly that string.",
+            "type": "reasoning_text"
+          }
+        ],
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "content": [
+          {
+            "annotations": [],
+            "text": "你好，世界！🌍🫠",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ]
+  },
+  {
+    "source": "engine-pipeline.raw-2.json",
+    "chunk_size": 7,
+    "output": [
+      {
+        "summary": [],
+        "type": "reasoning",
+        "content": [
+          {
+            "text": "User says: \"Copy exactly: 你好，世界！🌍🫠\". They want me to copy exactly that string. So I should output exactly that string.",
+            "type": "reasoning_text"
+          }
+        ],
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "content": [
+          {
+            "annotations": [],
+            "text": "你好，世界！🌍🫠",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ]
+  },
+  {
+    "source": "engine-pipeline.raw-2.json",
+    "chunk_size": 1000,
+    "output": [
+      {
+        "summary": [],
+        "type": "reasoning",
+        "content": [
+          {
+            "text": "User says: \"Copy exactly: 你好，世界！🌍🫠\". They want me to copy exactly that string. So I should output exactly that string.",
+            "type": "reasoning_text"
+          }
+        ],
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "content": [
+          {
+            "annotations": [],
+            "text": "你好，世界！🌍🫠",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ]
+  },
+  {
+    "source": "engine-pipeline.raw-4.json",
+    "chunk_size": 1,
+    "output": [
+      {
+        "summary": [],
+        "type": "reasoning",
+        "content": [
+          {
+            "text": "We need to answer: 7 times 9 = 63.",
+            "type": "reasoning_text"
+          }
+        ],
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "content": [
+          {
+            "annotations": [],
+            "text": "7 × 9 = 63.",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ]
+  },
+  {
+    "source": "engine-pipeline.raw-4.json",
+    "chunk_size": 7,
+    "output": [
+      {
+        "summary": [],
+        "type": "reasoning",
+        "content": [
+          {
+            "text": "We need to answer: 7 times 9 = 63.",
+            "type": "reasoning_text"
+          }
+        ],
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "content": [
+          {
+            "annotations": [],
+            "text": "7 × 9 = 63.",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ]
+  },
+  {
+    "source": "engine-pipeline.raw-4.json",
+    "chunk_size": 1000,
+    "output": [
+      {
+        "summary": [],
+        "type": "reasoning",
+        "content": [
+          {
+            "text": "We need to answer: 7 times 9 = 63.",
+            "type": "reasoning_text"
+          }
+        ],
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "content": [
+          {
+            "annotations": [],
+            "text": "7 × 9 = 63.",
+            "type": "output_text",
+            "logprobs": null
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ]
+  }
+]

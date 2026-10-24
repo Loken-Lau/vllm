@@ -1,0 +1,20 @@
+W1024 05:32:38.138000 3346129 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1024 05:32:38.139000 3346129 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1024 05:32:38.139000 3346129 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+{"case": "unicode", "stream": false, "status": "completed", "text": "你好，世界！🌍🫠"}
+{"case": "reasoning_truncated", "stream": false, "status": "incomplete", "text": "**"}
+{"case": "tool_call", "stream": false, "status": "completed", "text": ""}
+{"case": "tool_answer", "stream": false, "status": "completed", "text": "The current temperature at 48.85 N, 2.35 E (Paris) is **17 °C**."}
+{"case": "unicode", "stream": true, "status": "completed", "text": "你好，世界！🌍🫠"}
+{"case": "reasoning_truncated", "stream": true, "status": "incomplete", "text": "**"}
+{"case": "tool_call", "stream": true, "status": "completed", "text": ""}
+{"case": "tool_answer", "stream": true, "status": "completed", "text": "The current temperature at 48.85 N, 2.35 E (Paris) is **17 °C**."}
+{"case": "concurrent-0", "stream": false, "status": "completed", "text": "The product of 7 and 9 is 63."}
+{"case": "concurrent-6", "stream": false, "status": "completed", "text": "The product of 13 and 9 is 117."}
+{"case": "concurrent-1", "stream": true, "status": "completed", "text": "The product of 8 and 9 is 72."}
+{"case": "concurrent-2", "stream": false, "status": "completed", "text": "The product of 9 and 9 is 81."}
+{"case": "concurrent-4", "stream": false, "status": "completed", "text": "11 times 9 equals 99."}
+{"case": "concurrent-3", "stream": true, "status": "completed", "text": "The product of 10 and 9 is 90."}
+{"case": "concurrent-7", "stream": true, "status": "completed", "text": "The product of 14 and 9 is 126."}
+{"case": "concurrent-5", "stream": true, "status": "completed", "text": "The product of 12 and 9 is 108."}
+PASS: 18 requests

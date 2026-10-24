@@ -1,0 +1,413 @@
+Running 12 items in this shard
+FFFFFFFFFFFF                                                             [100%]
+=================================== FAILURES ===================================
+________________ TestFlush.test_flush_incomplete_utf8[-1-final] ________________
+
+self = <tests.parser.test_harmony.TestFlush object at 0x7fbcfd0c8f80>
+harmony_parser = <vllm.parser.harmony.HarmonyParser object at 0x7fbcfcd7a1e0>
+channel = 'final', chunk_size = 1, ending = ''
+
+    @pytest.mark.parametrize("channel", ["final", "analysis", "commentary"])
+    @pytest.mark.parametrize("chunk_size", [1, 100])
+    @pytest.mark.parametrize("ending", ["", "<|end|>"])
+    def test_flush_incomplete_utf8(self, harmony_parser, channel, chunk_size, ending):
+        """EOS must stream the replacement character for an unfinished token."""
+        tokens = encode_output(f"<|channel|>{channel}<|message|>Hello 🌍")[:-1]
+        tokens.extend(encode_output(ending))
+        deltas: list[str] = []
+        completed: list[Message] = []
+        for start in range(0, len(tokens), chunk_size):
+            result = harmony_parser.process_chunk(tokens[start : start + chunk_size])
+            deltas.extend(segment.delta for segment in result.segments)
+            completed.extend(
+                s.completed_message for s in result.segments if s.completed_message
+            )
+        flushed = harmony_parser.flush()
+        completed.extend(s.completed_message for s in flushed if s.completed_message)
+        assert get_text(completed[-1]) == "Hello �"
+        deltas.extend(segment.delta for segment in flushed)
+>       assert "".join(deltas) == "Hello �"
+E       AssertionError: assert 'Hello ' == 'Hello �'
+E         
+E         - Hello �
+E         ?       -
+E         + Hello
+
+tests/parser/test_harmony.py:199: AssertionError
+______________ TestFlush.test_flush_incomplete_utf8[-1-analysis] _______________
+
+self = <tests.parser.test_harmony.TestFlush object at 0x7fbcfd0c8fb0>
+harmony_parser = <vllm.parser.harmony.HarmonyParser object at 0x7fbcfd1344a0>
+channel = 'analysis', chunk_size = 1, ending = ''
+
+    @pytest.mark.parametrize("channel", ["final", "analysis", "commentary"])
+    @pytest.mark.parametrize("chunk_size", [1, 100])
+    @pytest.mark.parametrize("ending", ["", "<|end|>"])
+    def test_flush_incomplete_utf8(self, harmony_parser, channel, chunk_size, ending):
+        """EOS must stream the replacement character for an unfinished token."""
+        tokens = encode_output(f"<|channel|>{channel}<|message|>Hello 🌍")[:-1]
+        tokens.extend(encode_output(ending))
+        deltas: list[str] = []
+        completed: list[Message] = []
+        for start in range(0, len(tokens), chunk_size):
+            result = harmony_parser.process_chunk(tokens[start : start + chunk_size])
+            deltas.extend(segment.delta for segment in result.segments)
+            completed.extend(
+                s.completed_message for s in result.segments if s.completed_message
+            )
+        flushed = harmony_parser.flush()
+        completed.extend(s.completed_message for s in flushed if s.completed_message)
+        assert get_text(completed[-1]) == "Hello �"
+        deltas.extend(segment.delta for segment in flushed)
+>       assert "".join(deltas) == "Hello �"
+E       AssertionError: assert 'Hello ' == 'Hello �'
+E         
+E         - Hello �
+E         ?       -
+E         + Hello
+
+tests/parser/test_harmony.py:199: AssertionError
+_____________ TestFlush.test_flush_incomplete_utf8[-1-commentary] ______________
+
+self = <tests.parser.test_harmony.TestFlush object at 0x7fbcfd0c8500>
+harmony_parser = <vllm.parser.harmony.HarmonyParser object at 0x7fbcfcd7a8d0>
+channel = 'commentary', chunk_size = 1, ending = ''
+
+    @pytest.mark.parametrize("channel", ["final", "analysis", "commentary"])
+    @pytest.mark.parametrize("chunk_size", [1, 100])
+    @pytest.mark.parametrize("ending", ["", "<|end|>"])
+    def test_flush_incomplete_utf8(self, harmony_parser, channel, chunk_size, ending):
+        """EOS must stream the replacement character for an unfinished token."""
+        tokens = encode_output(f"<|channel|>{channel}<|message|>Hello 🌍")[:-1]
+        tokens.extend(encode_output(ending))
+        deltas: list[str] = []
+        completed: list[Message] = []
+        for start in range(0, len(tokens), chunk_size):
+            result = harmony_parser.process_chunk(tokens[start : start + chunk_size])
+            deltas.extend(segment.delta for segment in result.segments)
+            completed.extend(
+                s.completed_message for s in result.segments if s.completed_message
+            )
+        flushed = harmony_parser.flush()
+        completed.extend(s.completed_message for s in flushed if s.completed_message)
+        assert get_text(completed[-1]) == "Hello �"
+        deltas.extend(segment.delta for segment in flushed)
+>       assert "".join(deltas) == "Hello �"
+E       AssertionError: assert 'Hello ' == 'Hello �'
+E         
+E         - Hello �
+E         ?       -
+E         + Hello
+
+tests/parser/test_harmony.py:199: AssertionError
+_______________ TestFlush.test_flush_incomplete_utf8[-100-final] _______________
+
+self = <tests.parser.test_harmony.TestFlush object at 0x7fbcfd0c8d70>
+harmony_parser = <vllm.parser.harmony.HarmonyParser object at 0x7fbcfcd7a840>
+channel = 'final', chunk_size = 100, ending = ''
+
+    @pytest.mark.parametrize("channel", ["final", "analysis", "commentary"])
+    @pytest.mark.parametrize("chunk_size", [1, 100])
+    @pytest.mark.parametrize("ending", ["", "<|end|>"])
+    def test_flush_incomplete_utf8(self, harmony_parser, channel, chunk_size, ending):
+        """EOS must stream the replacement character for an unfinished token."""
+        tokens = encode_output(f"<|channel|>{channel}<|message|>Hello 🌍")[:-1]
+        tokens.extend(encode_output(ending))
+        deltas: list[str] = []
+        completed: list[Message] = []
+        for start in range(0, len(tokens), chunk_size):
+            result = harmony_parser.process_chunk(tokens[start : start + chunk_size])
+            deltas.extend(segment.delta for segment in result.segments)
+            completed.extend(
+                s.completed_message for s in result.segments if s.completed_message
+            )
+        flushed = harmony_parser.flush()
+        completed.extend(s.completed_message for s in flushed if s.completed_message)
+        assert get_text(completed[-1]) == "Hello �"
+        deltas.extend(segment.delta for segment in flushed)
+>       assert "".join(deltas) == "Hello �"
+E       AssertionError: assert 'Hello ' == 'Hello �'
+E         
+E         - Hello �
+E         ?       -
+E         + Hello
+
+tests/parser/test_harmony.py:199: AssertionError
+_____________ TestFlush.test_flush_incomplete_utf8[-100-analysis] ______________
+
+self = <tests.parser.test_harmony.TestFlush object at 0x7fbcfd0c8ce0>
+harmony_parser = <vllm.parser.harmony.HarmonyParser object at 0x7fbcfcd78e90>
+channel = 'analysis', chunk_size = 100, ending = ''
+
+    @pytest.mark.parametrize("channel", ["final", "analysis", "commentary"])
+    @pytest.mark.parametrize("chunk_size", [1, 100])
+    @pytest.mark.parametrize("ending", ["", "<|end|>"])
+    def test_flush_incomplete_utf8(self, harmony_parser, channel, chunk_size, ending):
+        """EOS must stream the replacement character for an unfinished token."""
+        tokens = encode_output(f"<|channel|>{channel}<|message|>Hello 🌍")[:-1]
+        tokens.extend(encode_output(ending))
+        deltas: list[str] = []
+        completed: list[Message] = []
+        for start in range(0, len(tokens), chunk_size):
+            result = harmony_parser.process_chunk(tokens[start : start + chunk_size])
+            deltas.extend(segment.delta for segment in result.segments)
+            completed.extend(
+                s.completed_message for s in result.segments if s.completed_message
+            )
+        flushed = harmony_parser.flush()
+        completed.extend(s.completed_message for s in flushed if s.completed_message)
+        assert get_text(completed[-1]) == "Hello �"
+        deltas.extend(segment.delta for segment in flushed)
+>       assert "".join(deltas) == "Hello �"
+E       AssertionError: assert 'Hello ' == 'Hello �'
+E         
+E         - Hello �
+E         ?       -
+E         + Hello
+
+tests/parser/test_harmony.py:199: AssertionError
+____________ TestFlush.test_flush_incomplete_utf8[-100-commentary] _____________
+
+self = <tests.parser.test_harmony.TestFlush object at 0x7fbcfd0c8a10>
+harmony_parser = <vllm.parser.harmony.HarmonyParser object at 0x7fbcfcd79250>
+channel = 'commentary', chunk_size = 100, ending = ''
+
+    @pytest.mark.parametrize("channel", ["final", "analysis", "commentary"])
+    @pytest.mark.parametrize("chunk_size", [1, 100])
+    @pytest.mark.parametrize("ending", ["", "<|end|>"])
+    def test_flush_incomplete_utf8(self, harmony_parser, channel, chunk_size, ending):
+        """EOS must stream the replacement character for an unfinished token."""
+        tokens = encode_output(f"<|channel|>{channel}<|message|>Hello 🌍")[:-1]
+        tokens.extend(encode_output(ending))
+        deltas: list[str] = []
+        completed: list[Message] = []
+        for start in range(0, len(tokens), chunk_size):
+            result = harmony_parser.process_chunk(tokens[start : start + chunk_size])
+            deltas.extend(segment.delta for segment in result.segments)
+            completed.extend(
+                s.completed_message for s in result.segments if s.completed_message
+            )
+        flushed = harmony_parser.flush()
+        completed.extend(s.completed_message for s in flushed if s.completed_message)
+        assert get_text(completed[-1]) == "Hello �"
+        deltas.extend(segment.delta for segment in flushed)
+>       assert "".join(deltas) == "Hello �"
+E       AssertionError: assert 'Hello ' == 'Hello �'
+E         
+E         - Hello �
+E         ?       -
+E         + Hello
+
+tests/parser/test_harmony.py:199: AssertionError
+____________ TestFlush.test_flush_incomplete_utf8[<|end|>-1-final] _____________
+
+self = <tests.parser.test_harmony.TestFlush object at 0x7fbcfd0c8080>
+harmony_parser = <vllm.parser.harmony.HarmonyParser object at 0x7fbcfcd78e90>
+channel = 'final', chunk_size = 1, ending = '<|end|>'
+
+    @pytest.mark.parametrize("channel", ["final", "analysis", "commentary"])
+    @pytest.mark.parametrize("chunk_size", [1, 100])
+    @pytest.mark.parametrize("ending", ["", "<|end|>"])
+    def test_flush_incomplete_utf8(self, harmony_parser, channel, chunk_size, ending):
+        """EOS must stream the replacement character for an unfinished token."""
+        tokens = encode_output(f"<|channel|>{channel}<|message|>Hello 🌍")[:-1]
+        tokens.extend(encode_output(ending))
+        deltas: list[str] = []
+        completed: list[Message] = []
+        for start in range(0, len(tokens), chunk_size):
+            result = harmony_parser.process_chunk(tokens[start : start + chunk_size])
+            deltas.extend(segment.delta for segment in result.segments)
+            completed.extend(
+                s.completed_message for s in result.segments if s.completed_message
+            )
+        flushed = harmony_parser.flush()
+        completed.extend(s.completed_message for s in flushed if s.completed_message)
+        assert get_text(completed[-1]) == "Hello �"
+        deltas.extend(segment.delta for segment in flushed)
+>       assert "".join(deltas) == "Hello �"
+E       AssertionError: assert 'Hello ' == 'Hello �'
+E         
+E         - Hello �
+E         ?       -
+E         + Hello
+
+tests/parser/test_harmony.py:199: AssertionError
+___________ TestFlush.test_flush_incomplete_utf8[<|end|>-1-analysis] ___________
+
+self = <tests.parser.test_harmony.TestFlush object at 0x7fbcfd0c8a70>
+harmony_parser = <vllm.parser.harmony.HarmonyParser object at 0x7fbcfcd7a780>
+channel = 'analysis', chunk_size = 1, ending = '<|end|>'
+
+    @pytest.mark.parametrize("channel", ["final", "analysis", "commentary"])
+    @pytest.mark.parametrize("chunk_size", [1, 100])
+    @pytest.mark.parametrize("ending", ["", "<|end|>"])
+    def test_flush_incomplete_utf8(self, harmony_parser, channel, chunk_size, ending):
+        """EOS must stream the replacement character for an unfinished token."""
+        tokens = encode_output(f"<|channel|>{channel}<|message|>Hello 🌍")[:-1]
+        tokens.extend(encode_output(ending))
+        deltas: list[str] = []
+        completed: list[Message] = []
+        for start in range(0, len(tokens), chunk_size):
+            result = harmony_parser.process_chunk(tokens[start : start + chunk_size])
+            deltas.extend(segment.delta for segment in result.segments)
+            completed.extend(
+                s.completed_message for s in result.segments if s.completed_message
+            )
+        flushed = harmony_parser.flush()
+        completed.extend(s.completed_message for s in flushed if s.completed_message)
+        assert get_text(completed[-1]) == "Hello �"
+        deltas.extend(segment.delta for segment in flushed)
+>       assert "".join(deltas) == "Hello �"
+E       AssertionError: assert 'Hello ' == 'Hello �'
+E         
+E         - Hello �
+E         ?       -
+E         + Hello
+
+tests/parser/test_harmony.py:199: AssertionError
+__________ TestFlush.test_flush_incomplete_utf8[<|end|>-1-commentary] __________
+
+self = <tests.parser.test_harmony.TestFlush object at 0x7fbcfd0c81d0>
+harmony_parser = <vllm.parser.harmony.HarmonyParser object at 0x7fbcfcd79040>
+channel = 'commentary', chunk_size = 1, ending = '<|end|>'
+
+    @pytest.mark.parametrize("channel", ["final", "analysis", "commentary"])
+    @pytest.mark.parametrize("chunk_size", [1, 100])
+    @pytest.mark.parametrize("ending", ["", "<|end|>"])
+    def test_flush_incomplete_utf8(self, harmony_parser, channel, chunk_size, ending):
+        """EOS must stream the replacement character for an unfinished token."""
+        tokens = encode_output(f"<|channel|>{channel}<|message|>Hello 🌍")[:-1]
+        tokens.extend(encode_output(ending))
+        deltas: list[str] = []
+        completed: list[Message] = []
+        for start in range(0, len(tokens), chunk_size):
+            result = harmony_parser.process_chunk(tokens[start : start + chunk_size])
+            deltas.extend(segment.delta for segment in result.segments)
+            completed.extend(
+                s.completed_message for s in result.segments if s.completed_message
+            )
+        flushed = harmony_parser.flush()
+        completed.extend(s.completed_message for s in flushed if s.completed_message)
+        assert get_text(completed[-1]) == "Hello �"
+        deltas.extend(segment.delta for segment in flushed)
+>       assert "".join(deltas) == "Hello �"
+E       AssertionError: assert 'Hello ' == 'Hello �'
+E         
+E         - Hello �
+E         ?       -
+E         + Hello
+
+tests/parser/test_harmony.py:199: AssertionError
+___________ TestFlush.test_flush_incomplete_utf8[<|end|>-100-final] ____________
+
+self = <tests.parser.test_harmony.TestFlush object at 0x7fbcfd0c80e0>
+harmony_parser = <vllm.parser.harmony.HarmonyParser object at 0x7fbcfcd7a3f0>
+channel = 'final', chunk_size = 100, ending = '<|end|>'
+
+    @pytest.mark.parametrize("channel", ["final", "analysis", "commentary"])
+    @pytest.mark.parametrize("chunk_size", [1, 100])
+    @pytest.mark.parametrize("ending", ["", "<|end|>"])
+    def test_flush_incomplete_utf8(self, harmony_parser, channel, chunk_size, ending):
+        """EOS must stream the replacement character for an unfinished token."""
+        tokens = encode_output(f"<|channel|>{channel}<|message|>Hello 🌍")[:-1]
+        tokens.extend(encode_output(ending))
+        deltas: list[str] = []
+        completed: list[Message] = []
+        for start in range(0, len(tokens), chunk_size):
+            result = harmony_parser.process_chunk(tokens[start : start + chunk_size])
+            deltas.extend(segment.delta for segment in result.segments)
+            completed.extend(
+                s.completed_message for s in result.segments if s.completed_message
+            )
+        flushed = harmony_parser.flush()
+        completed.extend(s.completed_message for s in flushed if s.completed_message)
+        assert get_text(completed[-1]) == "Hello �"
+        deltas.extend(segment.delta for segment in flushed)
+>       assert "".join(deltas) == "Hello �"
+E       AssertionError: assert 'Hello ' == 'Hello �'
+E         
+E         - Hello �
+E         ?       -
+E         + Hello
+
+tests/parser/test_harmony.py:199: AssertionError
+__________ TestFlush.test_flush_incomplete_utf8[<|end|>-100-analysis] __________
+
+self = <tests.parser.test_harmony.TestFlush object at 0x7fbcfd0c86b0>
+harmony_parser = <vllm.parser.harmony.HarmonyParser object at 0x7fbcfcd7a750>
+channel = 'analysis', chunk_size = 100, ending = '<|end|>'
+
+    @pytest.mark.parametrize("channel", ["final", "analysis", "commentary"])
+    @pytest.mark.parametrize("chunk_size", [1, 100])
+    @pytest.mark.parametrize("ending", ["", "<|end|>"])
+    def test_flush_incomplete_utf8(self, harmony_parser, channel, chunk_size, ending):
+        """EOS must stream the replacement character for an unfinished token."""
+        tokens = encode_output(f"<|channel|>{channel}<|message|>Hello 🌍")[:-1]
+        tokens.extend(encode_output(ending))
+        deltas: list[str] = []
+        completed: list[Message] = []
+        for start in range(0, len(tokens), chunk_size):
+            result = harmony_parser.process_chunk(tokens[start : start + chunk_size])
+            deltas.extend(segment.delta for segment in result.segments)
+            completed.extend(
+                s.completed_message for s in result.segments if s.completed_message
+            )
+        flushed = harmony_parser.flush()
+        completed.extend(s.completed_message for s in flushed if s.completed_message)
+        assert get_text(completed[-1]) == "Hello �"
+        deltas.extend(segment.delta for segment in flushed)
+>       assert "".join(deltas) == "Hello �"
+E       AssertionError: assert 'Hello ' == 'Hello �'
+E         
+E         - Hello �
+E         ?       -
+E         + Hello
+
+tests/parser/test_harmony.py:199: AssertionError
+_________ TestFlush.test_flush_incomplete_utf8[<|end|>-100-commentary] _________
+
+self = <tests.parser.test_harmony.TestFlush object at 0x7fbcfd0c8710>
+harmony_parser = <vllm.parser.harmony.HarmonyParser object at 0x7fbcfcd7a0f0>
+channel = 'commentary', chunk_size = 100, ending = '<|end|>'
+
+    @pytest.mark.parametrize("channel", ["final", "analysis", "commentary"])
+    @pytest.mark.parametrize("chunk_size", [1, 100])
+    @pytest.mark.parametrize("ending", ["", "<|end|>"])
+    def test_flush_incomplete_utf8(self, harmony_parser, channel, chunk_size, ending):
+        """EOS must stream the replacement character for an unfinished token."""
+        tokens = encode_output(f"<|channel|>{channel}<|message|>Hello 🌍")[:-1]
+        tokens.extend(encode_output(ending))
+        deltas: list[str] = []
+        completed: list[Message] = []
+        for start in range(0, len(tokens), chunk_size):
+            result = harmony_parser.process_chunk(tokens[start : start + chunk_size])
+            deltas.extend(segment.delta for segment in result.segments)
+            completed.extend(
+                s.completed_message for s in result.segments if s.completed_message
+            )
+        flushed = harmony_parser.flush()
+        completed.extend(s.completed_message for s in flushed if s.completed_message)
+        assert get_text(completed[-1]) == "Hello �"
+        deltas.extend(segment.delta for segment in flushed)
+>       assert "".join(deltas) == "Hello �"
+E       AssertionError: assert 'Hello ' == 'Hello �'
+E         
+E         - Hello �
+E         ?       -
+E         + Hello
+
+tests/parser/test_harmony.py:199: AssertionError
+=========================== short test summary info ============================
+FAILED tests/parser/test_harmony.py::TestFlush::test_flush_incomplete_utf8[-1-final]
+FAILED tests/parser/test_harmony.py::TestFlush::test_flush_incomplete_utf8[-1-analysis]
+FAILED tests/parser/test_harmony.py::TestFlush::test_flush_incomplete_utf8[-1-commentary]
+FAILED tests/parser/test_harmony.py::TestFlush::test_flush_incomplete_utf8[-100-final]
+FAILED tests/parser/test_harmony.py::TestFlush::test_flush_incomplete_utf8[-100-analysis]
+FAILED tests/parser/test_harmony.py::TestFlush::test_flush_incomplete_utf8[-100-commentary]
+FAILED tests/parser/test_harmony.py::TestFlush::test_flush_incomplete_utf8[<|end|>-1-final]
+FAILED tests/parser/test_harmony.py::TestFlush::test_flush_incomplete_utf8[<|end|>-1-analysis]
+FAILED tests/parser/test_harmony.py::TestFlush::test_flush_incomplete_utf8[<|end|>-1-commentary]
+FAILED tests/parser/test_harmony.py::TestFlush::test_flush_incomplete_utf8[<|end|>-100-final]
+FAILED tests/parser/test_harmony.py::TestFlush::test_flush_incomplete_utf8[<|end|>-100-analysis]
+FAILED tests/parser/test_harmony.py::TestFlush::test_flush_incomplete_utf8[<|end|>-100-commentary]
+12 failed, 72 deselected in 7.00s

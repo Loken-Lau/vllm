@@ -1,0 +1,10 @@
+[
+  {
+    "repo": "vllm-base",
+    "test_ast_sha256": "5cc4303a0efb66037e72bcd83c1093a931884856da9a589b5579cce2c24b2aa6"
+  },
+  {
+    "repo": "vllm",
+    "test_ast_sha256": "5cc4303a0efb66037e72bcd83c1093a931884856da9a589b5579cce2c24b2aa6"
+  }
+]

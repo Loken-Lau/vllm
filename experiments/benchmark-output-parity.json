@@ -1,0 +1,12 @@
+{
+  "1": {
+    "base-off": true,
+    "fixed-off": true,
+    "fixed-on": true
+  },
+  "4": {
+    "base-off": true,
+    "fixed-off": true,
+    "fixed-on": true
+  }
+}

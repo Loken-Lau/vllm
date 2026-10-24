@@ -1,0 +1,296 @@
+W1024 06:28:34.164000 4088878 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1024 06:28:34.165000 4088878 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1024 06:28:34.165000 4088878 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+============================= test session starts ==============================
+platform linux -- Python 3.12.15, pytest-9.1.1, pluggy-1.7.0 -- /path/to/workspace/pr3/vllm-base/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /path/to/workspace/pr3/vllm-base
+configfile: pyproject.toml
+plugins: platformdirs-4.13.5, anyio-4.15.1, asyncio-1.4.0, timeout-2.4.0, shard-0.1.2, forked-1.7.5
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 1 item
+Running 1 items in this shard: tests/entrypoints/openai/responses/test_harmony.py::test_output_logprobs[0-False]
+
+tests/entrypoints/openai/responses/test_harmony.py::test_output_logprobs[0-False] W1024 06:28:46.805000 4091668 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1024 06:28:46.806000 4091668 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1024 06:28:46.806000 4091668 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+(MainProcess pid=4091668) WARNING 10-24 06:28:55 [cuda.py:998] Detected different devices in the system: NVIDIA A100 80GB PCIe, NVIDIA A800 80GB PCIe. Please make sure to set `CUDA_DEVICE_ORDER=PCI_BUS_ID` to avoid unexpected behavior.
+(APIServer pid=4091668) INFO 10-24 06:28:55 [startup.py:38] 
+(APIServer pid=4091668) INFO 10-24 06:28:55 [startup.py:38]        █     █     █▄   ▄█
+(APIServer pid=4091668) INFO 10-24 06:28:55 [startup.py:38]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.1.dev1+gfb61ac07b.d20261019
+(APIServer pid=4091668) INFO 10-24 06:28:55 [startup.py:38]   █▄█▀ █     █     █     █  model   openai/gpt-oss-20b
+(APIServer pid=4091668) INFO 10-24 06:28:55 [startup.py:38]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+(APIServer pid=4091668) INFO 10-24 06:28:55 [startup.py:38] 
+(APIServer pid=4091668) INFO 10-24 06:28:55 [startup.py:96] non-default args: {'model_tag': 'openai/gpt-oss-20b', 'tool_server': 'demo', 'port': 33331, 'model': 'openai/gpt-oss-20b', 'max_model_len': 5000, 'enforce_eager': True}
+(APIServer pid=4091668) INFO 10-24 06:28:55 [arg_utils.py:941] HF_HUB_OFFLINE is True, replace model_id [openai/gpt-oss-20b] to model_path [/path/to/workspace/.cache/huggingface/hub/models--openai--gpt-oss-20b/snapshots/6cee5e81ee83917806bbde320786a8fb61efebee]
+(APIServer pid=4091668) INFO 10-24 06:28:55 [model.py:744] Resolved architecture: GptOssForCausalLM
+(APIServer pid=4091668) INFO 10-24 06:28:55 [model.py:2170] Using max model len 5000
+(APIServer pid=4091668) INFO 10-24 06:28:56 [config.py:560] Overriding max cuda graph capture size to 1024 for performance.
+(APIServer pid=4091668) WARNING 10-24 06:28:56 [vllm.py:1760] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none and --kernel_config.enable_jit_warmup=False
+(APIServer pid=4091668) WARNING 10-24 06:28:56 [vllm.py:1784] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(APIServer pid=4091668) INFO 10-24 06:28:56 [kernel.py:480] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(APIServer pid=4091668) INFO 10-24 06:28:56 [vllm.py:1987] Cudagraph is disabled under eager mode
+(APIServer pid=4091668) INFO 10-24 06:28:56 [compilation.py:317] Enabled custom fusions: norm_quant, act_quant
+W1024 06:29:03.758000 4096523 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1024 06:29:03.759000 4096523 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1024 06:29:03.760000 4096523 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+(EngineCore pid=4096523) WARNING 10-24 06:29:12 [cuda.py:998] Detected different devices in the system: NVIDIA A100 80GB PCIe, NVIDIA A800 80GB PCIe. Please make sure to set `CUDA_DEVICE_ORDER=PCI_BUS_ID` to avoid unexpected behavior.
+(EngineCore pid=4096523) INFO 10-24 06:29:12 [core.py:136] Initializing a V1 LLM engine (v0.1.dev1+gfb61ac07b.d20261019) with config: model='/path/to/workspace/.cache/huggingface/hub/models--openai--gpt-oss-20b/snapshots/6cee5e81ee83917806bbde320786a8fb61efebee', speculative_config=None, tokenizer='/path/to/workspace/.cache/huggingface/hub/models--openai--gpt-oss-20b/snapshots/6cee5e81ee83917806bbde320786a8fb61efebee', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=5000, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=gpt_oss_mxfp4, quantization_config=None, enforce_eager=True, aux_output_config=AuxOutputConfig(enable_return_routed_experts=False, max_bytes=None), kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='openai_gptoss', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, custom_histogram_buckets=None, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=0, served_model_name=/path/to/workspace/.cache/huggingface/hub/models--openai--gpt-oss-20b/snapshots/6cee5e81ee83917806bbde320786a8fb61efebee, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'cudagraph_decoder_replay': True, 'decoder_replay_cudagraph_capture_sizes': [], 'decoder_replay_trim_threshold': 768, 'compile_sizes': [], 'compile_ranges_endpoints': [2048], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_rocm_segmented_attn_autotune=False, enable_cutedsl_warmup=True, enable_jit_warmup=False, monokernel=False, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=4096523) INFO 10-24 06:29:12 [parallel_state.py:1929] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_858ffbf2521b4cc1a0732258e7f6945e backend=nccl
+(EngineCore pid=4096523) INFO 10-24 06:29:13 [parallel_state.py:2373] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank 0, EPLB rank N/A
+(EngineCore pid=4096523) INFO 10-24 06:29:13 [gpu_worker.py:513] Using V2 Model Runner
+(EngineCore pid=4096523) INFO 10-24 06:29:14 [model_runner.py:399] Loading model from scratch...
+(EngineCore pid=4096523) INFO 10-24 06:29:14 [cuda.py:508] Using TRITON_ATTN attention backend out of potential backends: ['TRITON_ATTN'].
+(EngineCore pid=4096523) INFO 10-24 06:29:14 [mxfp4.py:718] Using 'MARLIN' Mxfp4 MoE backend.
+(EngineCore pid=4096523) INFO 10-24 06:29:14 [base_loader.py:82] Initializing model took 0.699212 seconds
+(EngineCore pid=4096523) INFO 10-24 06:29:14 [weight_utils.py:1144] Filesystem type for checkpoints: EXT4. Checkpoint size: 12.82 GiB. Available RAM: 710.23 GiB.
+(EngineCore pid=4096523) INFO 10-24 06:29:14 [weight_utils.py:1167] Auto-prefetch is disabled because the filesystem (EXT4) is not a recognized network FS (NFS/Lustre). If you want to force prefetching, start vLLM with --safetensors-load-strategy=prefetch.
+
+Loading safetensors checkpoint shards:   0% Completed | 0/3 [00:00<?, ?it/s]
+
+Loading safetensors checkpoint shards:  33% Completed | 1/3 [00:00<00:01,  1.01it/s]
+
+Loading safetensors checkpoint shards:  67% Completed | 2/3 [00:02<00:01,  1.11s/it]
+
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:03<00:00,  1.08s/it]
+
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:03<00:00,  1.08s/it]
+
+(EngineCore pid=4096523) INFO 10-24 06:29:18 [default_loader.py:506] Loading weights took 3.43 seconds
+(EngineCore pid=4096523) INFO 10-24 06:29:18 [mxfp4.py:2291] Using MoEPrepareAndFinalizeNoDPEPModular
+(EngineCore pid=4096523) INFO 10-24 06:29:18 [mxfp4.py:2292] Using MarlinExperts
+(EngineCore pid=4096523) INFO 10-24 06:29:20 [model_runner.py:431] Model loading took 13.8 GiB memory and 6.365069 seconds
+(EngineCore pid=4096523) INFO 10-24 06:29:20 [topk_topp_sampler.py:149] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=4096523) INFO 10-24 06:29:20 [torch_utils.py:286] Reducing Torch threads from 32 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=4096523) INFO 10-24 06:29:20 [utils.py:380] Using LBNHC KV cache layout.
+(EngineCore pid=4096523) INFO 10-24 06:29:21 [gpu_worker.py:766] Available KV cache memory: 58.48 GiB
+(EngineCore pid=4096523) INFO 10-24 06:29:21 [kv_cache_utils.py:1101] GPU KV cache size: 1,381,280 tokens, Maximum concurrency for 5,000 tokens per request: 276.26x
+(EngineCore pid=4096523) INFO 10-24 06:29:21 [kv_cache_utils.py:865] kv cache group sizes (16, 16)
+(EngineCore pid=4096523) INFO 10-24 06:29:21 [kv_cache_utils.py:866] kv lcm block sizes 16
+(EngineCore pid=4096523) INFO 10-24 06:29:21 [gpu_worker.py:1060] Free memory on device (78.61/79.14 GiB) on startup. Desired GPU memory utilization is (0.92, 72.81 GiB). Actual usage is 14.22 GiB for consumed memory (weights + non-torch), 0.11 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=62630117397` (58.33 GiB) to fit into requested memory, or `--kv-cache-memory=68864971264` (64.14 GiB) to fully utilize gpu memory. Current kv cache memory in use is 58.48 GiB.
+(EngineCore pid=4096523) INFO 10-24 06:29:22 [core.py:402] init engine (profile, create kv cache, warmup model) took 2.27 s
+(EngineCore pid=4096523) WARNING 10-24 06:29:24 [vllm.py:1760] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none and --kernel_config.enable_jit_warmup=False
+(EngineCore pid=4096523) WARNING 10-24 06:29:24 [vllm.py:1784] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(EngineCore pid=4096523) INFO 10-24 06:29:24 [kernel.py:480] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'], gelu_and_mul_sparse=['triton', 'native'])
+(EngineCore pid=4096523) INFO 10-24 06:29:24 [vllm.py:1987] Cudagraph is disabled under eager mode
+(EngineCore pid=4096523) INFO 10-24 06:29:24 [compilation.py:317] Enabled custom fusions: norm_quant, act_quant
+(APIServer pid=4091668) INFO 10-24 06:29:24 [entry.py:135] Supported tasks: ['generate']
+(APIServer pid=4091668) INFO 10-24 06:29:24 [factories.py:105] Scale-out endpoints are disabled. Restart vllm serve with --enable-scale-out to enable them.
+(APIServer pid=4091668) WARNING 10-24 06:29:24 [tool.py:64] EXA_API_KEY is not set, browsing is disabled
+(APIServer pid=4091668) INFO 10-24 06:29:24 [tool.py:140] Code interpreter tool initialized
+(APIServer pid=4091668) INFO 10-24 06:29:24 [tool_server.py:206] DemoToolServer initialized with tools: ['python']
+(APIServer pid=4091668) INFO 10-24 06:29:27 [hf.py:736] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+(APIServer pid=4091668) WARNING 10-24 06:29:27 [serving.py:169] `VLLM_ENABLE_RESPONSES_API_STORE` is enabled. This may cause a memory leak since we never remove responses from the store.
+(APIServer pid=4091668) WARNING 10-24 06:29:27 [serving.py:177] For gpt-oss, we ignore --enable-auto-tool-choice and always enable tool use.
+(APIServer pid=4091668) WARNING 10-24 06:29:27 [serving.py:291] The chat template requires system-first ordering, so inline system messages in /v1/messages requests (e.g. Claude Code's per-turn reminders) are merged into the leading system prompt. Each new one changes the prompt prefix, so the rest of the conversation misses the prefix cache. Pass a --chat-template that accepts non-leading system messages to avoid this.
+(APIServer pid=4091668) INFO 10-24 06:29:27 [entry.py:139] Starting vLLM server on http://0.0.0.0:33331
+(APIServer pid=4091668) INFO 10-24 06:29:27 [launcher.py:188] Available routes are:
+(APIServer pid=4091668) INFO 10-24 06:29:27 [launcher.py:197] Route: /openapi.json, Methods: HEAD, GET
+(APIServer pid=4091668) INFO 10-24 06:29:27 [launcher.py:197] Route: /docs, Methods: HEAD, GET
+(APIServer pid=4091668) INFO 10-24 06:29:27 [launcher.py:197] Route: /docs/oauth2-redirect, Methods: HEAD, GET
+(APIServer pid=4091668) INFO 10-24 06:29:27 [launcher.py:197] Route: /redoc, Methods: HEAD, GET
+(APIServer pid=4091668) INFO 10-24 06:29:27 [launcher.py:197] Route: /metrics, Methods: GET
+(APIServer pid=4091668) INFO 10-24 06:29:27 [launcher.py:197] Route: /v1/chat/completions/render, Methods: POST
+(APIServer pid=4091668) INFO 10-24 06:29:27 [launcher.py:197] Route: /v1/messages/render, Methods: POST
+(APIServer pid=4091668) INFO 10-24 06:29:27 [launcher.py:197] Route: /v1/completions/render, Methods: POST
+(APIServer pid=4091668) INFO 10-24 06:29:27 [launcher.py:197] Route: /v1/responses/render, Methods: POST
+(APIServer pid=4091668) INFO 10-24 06:29:27 [launcher.py:197] Route: /v1/chat/completions/derender, Methods: POST
+(APIServer pid=4091668) INFO 10-24 06:29:27 [launcher.py:197] Route: /v1/completions/derender, Methods: POST
+(APIServer pid=4091668) INFO 10-24 06:29:27 [launcher.py:197] Route: /inference/v1/generate, Methods: POST
+(APIServer pid=4091668) INFO 10-24 06:29:27 [launcher.py:197] Route: /inference/v1/abort_requests, Methods: POST
+INFO:     Started server process [4091668]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:33914 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33916 - "POST /v1/responses HTTP/1.1" 400 Bad Request
+[RemoteOpenAIServer] GPU memory before server start: 0.93 GB
+Launching RemoteOpenAIServer with: vllm serve openai/gpt-oss-20b --enforce-eager --tool-server demo --max_model_len 5000 --port 33331 --seed 0
+FAILED(APIServer pid=4091668) INFO 10-24 06:29:29 [launcher.py:256] [shutdown] API server: shutdown triggered
+(APIServer pid=4091668) INFO 10-24 06:29:29 [launcher.py:272] [shutdown] API server: stopping engine client mode=abort timeout=0s
+(APIServer pid=4091668) INFO 10-24 06:29:29 [core_client.py:788] [shutdown] MPClient: start timeout=0s
+(APIServer pid=4091668) INFO 10-24 06:29:29 [core_client.py:790] [shutdown] MPClient: stopping engine manager
+(APIServer pid=4091668) INFO 10-24 06:29:29 [utils.py:628] [shutdown] Process manager: send sigterm to process EngineCore
+(APIServer pid=4091668) WARNING 10-24 06:29:29 [utils.py:648] [shutdown] Process manager: force killing remaining processes count=1
+(APIServer pid=4091668) WARNING 10-24 06:29:29 [utils.py:653] [shutdown] Process manager: force killing remaining process EngineCore pid 4096523
+(EngineCore pid=4096523) INFO 10-24 06:29:29 [core.py:1513] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=4096523) INFO 10-24 06:29:29 [core.py:1700] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=4096523) INFO 10-24 06:29:29 [core.py:1731] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=4096523) INFO 10-24 06:29:29 [core.py:1561] [shutdown] EngineCore: exiting busy loop
+(APIServer pid=4091668) INFO 10-24 06:29:29 [core_client.py:792] [shutdown] MPClient: engine manager stopped
+(APIServer pid=4091668) INFO 10-24 06:29:29 [core_client.py:793] [shutdown] MPClient: cleaning up background resources
+(APIServer pid=4091668) INFO 10-24 06:29:29 [core_client.py:795] [shutdown] MPClient: complete
+(APIServer pid=4091668) INFO 10-24 06:29:29 [launcher.py:281] [shutdown] API server: engine client stopped
+(APIServer pid=4091668) INFO 10-24 06:29:29 [launcher.py:284] [shutdown] API server: signalling HTTP server shutdown
+(APIServer pid=4091668) INFO 10-24 06:29:29 [launcher.py:306] [shutdown] API server: shutting down FastAPI HTTP server
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+/path/to/workspace/opensource/.tools/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+[RemoteOpenAIServer] Sent SIGTERM to process 4091668
+[RemoteOpenAIServer] Server 4091668 terminated gracefully
+[RemoteOpenAIServer] GPU memory released to 0.93 GB (target: 3.07 GB) in 0.0s
+
+
+=================================== FAILURES ===================================
+________________________ test_output_logprobs[0-False] _________________________
+
+server = <tests.utils.RemoteOpenAIServer object at 0x7f17be671df0>
+stream = False, top_logprobs = 0
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize("stream", [False, True])
+    @pytest.mark.parametrize("top_logprobs", [0, 3])
+    async def test_output_logprobs(server, stream, top_logprobs):
+        """Output-text probabilities exclude Harmony headers and reasoning tokens."""
+        async with server.get_async_client() as client:
+>           response = await _collect_logprob_response(
+                client,
+                input="Say hello in Chinese in one short sentence.",
+                max_output_tokens=256,
+                top_logprobs=top_logprobs,
+                stream=stream,
+            )
+
+tests/entrypoints/openai/responses/test_harmony.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/entrypoints/openai/responses/test_harmony.py:81: in _collect_logprob_response
+    response = await client.responses.create(
+../../opensource/vllm/.venv/lib/python3.12/site-packages/openai/resources/responses/responses.py:2963: in create
+    return await self._post(
+../../opensource/vllm/.venv/lib/python3.12/site-packages/openai/_base_client.py:2053: in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <openai.AsyncOpenAI object at 0x7f17bc17bc80>
+cast_to = <class 'openai.types.responses.response.Response'>
+options = FinalRequestOptions(method='post', url='/responses', params={}, headers=NOT_GIVEN, max_retries=NOT_GIVEN, timeout=NOT_...nce.', 'max_output_tokens': 256, 'reasoning': {'effort': 'low'}, 'temperature': 0, 'top_logprobs': 0}, extra_json=None)
+stream = False
+stream_cls = openai.AsyncStream[typing.Annotated[typing.Union[openai.types.responses.response_audio_delta_event.ResponseAudioDeltaE...eCustomToolCallInputDoneEvent], PropertyInfo(alias='None', format=None, format_template='None', discriminator='type')]]
+
+    async def request(
+        self,
+        cast_to: Type[ResponseT],
+        options: FinalRequestOptions,
+        *,
+        stream: bool = False,
+        stream_cls: type[_AsyncStreamT] | None = None,
+    ) -> ResponseT | _AsyncStreamT:
+        if self._platform is None:
+            # `get_platform` can make blocking IO calls so we
+            # execute it earlier while we are in an async context
+            self._platform = await asyncify(get_platform)()
+    
+        cast_to = self._maybe_override_cast_to(cast_to, options)
+    
+        # create a copy of the options we were given so that if the
+        # options are mutated later & we then retry, the retries are
+        # given the original options
+        input_options = model_copy(options)
+        if input_options.idempotency_key is None and input_options.method.lower() != "get":
+            # ensure the idempotency key is reused between requests
+            input_options.idempotency_key = self._idempotency_key()
+    
+        response: httpx2.Response | None = None
+        max_retries = input_options.get_max_retries(self.max_retries)
+        self._validate_max_retries(max_retries)
+    
+        retries_taken = 0
+        for retries_taken in range(max_retries + 1):
+            options = model_copy(input_options)
+            options = await self._prepare_options(options)
+            request_body_replay = _RequestBodyReplay(options)
+    
+            remaining_retries = max_retries - retries_taken
+            request = self._build_request(options, retries_taken=retries_taken)
+            await self._prepare_request(request)
+    
+            kwargs: HttpxSendArgs = {}
+            if self.custom_auth is not None:
+                kwargs["auth"] = (
+                    normalize_httpx2_auth(self.custom_auth)
+                    if is_httpx2_async_client(self._client)
+                    else normalize_legacy_httpx_auth(self.custom_auth)
+                )
+    
+            if options.follow_redirects is not None:
+                kwargs["follow_redirects"] = options.follow_redirects
+    
+            log.debug("Sending HTTP Request: %s", get_http_method_for_logging(request.method))
+    
+            response = None
+            try:
+                response = await self._send_request(
+                    request,
+                    stream=stream or self._should_stream_response_body(request=request),
+                    **kwargs,
+                )
+            except timeout_exceptions() as err:
+                log.debug("Encountered a timeout exception: %s", type(err).__name__)
+    
+                if remaining_retries > 0 and request_body_replay.rewind():
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising timeout error")
+                raise APITimeoutError(request=request) from err
+            except OpenAIError as err:
+                # Propagate OpenAIErrors as-is, without retrying or wrapping in APIConnectionError
+                raise err
+            except request_exceptions() as err:
+                log.debug("Encountered exception: %s", type(err).__name__)
+    
+                if remaining_retries > 0 and request_body_replay.rewind():
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising connection error")
+                raise APIConnectionError(request=request) from err
+    
+            log.debug(
+                "HTTP Response: %s %i",
+                get_http_method_for_logging(request.method),
+                response.status_code,
+            )
+            log.debug("request_id: %s", response.headers.get("x-request-id"))
+    
+            try:
+                response.raise_for_status()
+            except status_exceptions() as err:  # thrown on 4xx and 5xx status code
+                log.debug("Encountered an HTTP status error: %i", response.status_code)
+    
+                if remaining_retries > 0 and self._should_retry(err.response) and request_body_replay.rewind():
+                    await err.response.aclose()
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=response,
+                    )
+                    continue
+    
+                # If the response is streamed then we need to explicitly read the response
+                # to completion before attempting to access the response text.
+                if not err.response.is_closed:
+                    await err.response.aread()
+    
+                log.debug("Re-raising status error")
+>               raise self._make_status_error_from_response(err.response) from None
+E               openai.BadRequestError: Error code: 400 - {'error': {'message': 'logprobs are not supported with gpt-oss models', 'type': 'invalid_request_error', 'param': 'logprobs', 'code': 400}}
+
+../../opensource/vllm/.venv/lib/python3.12/site-packages/openai/_base_client.py:1838: BadRequestError
+=========================== short test summary info ============================
+FAILED tests/entrypoints/openai/responses/test_harmony.py::test_output_logprobs[0-False]
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!
+============================== 1 failed in 45.89s ==============================

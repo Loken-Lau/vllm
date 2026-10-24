@@ -1,0 +1,463 @@
+{
+  "repo": "/path/to/workspace/pr3/vllm-base",
+  "logprobs": false,
+  "gpu_snapshot": "index, name, memory.used [MiB], utilization.gpu [%]\n0, NVIDIA A100 80GB PCIe, 36943 MiB, 21 %\n1, NVIDIA A800 80GB PCIe, 0 MiB, 0 %\n",
+  "runs": [
+    {
+      "concurrency": 1,
+      "repeat": 0,
+      "requests": 8,
+      "elapsed_s": 27.819764140993357,
+      "tokens_per_second": 36.80836382401609,
+      "latency_median_s": 3.477358954027295,
+      "latency_p95_s": 3.490032583475113,
+      "ttft_median_s": 0.14140905626118183,
+      "rows": [
+        {
+          "latency_s": 3.490032583475113,
+          "ttft_s": 0.1413981355726719,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.473464496433735,
+          "ttft_s": 0.1425907351076603,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.4875402078032494,
+          "ttft_s": 0.14117953181266785,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.475997667759657,
+          "ttft_s": 0.1408153921365738,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.4781977981328964,
+          "ttft_s": 0.14141997694969177,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.4807961024343967,
+          "ttft_s": 0.14050545915961266,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.476520109921694,
+          "ttft_s": 0.14162372052669525,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.456605602055788,
+          "ttft_s": 0.14150477200746536,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        }
+      ]
+    },
+    {
+      "concurrency": 1,
+      "repeat": 1,
+      "requests": 8,
+      "elapsed_s": 27.787990670651197,
+      "tokens_per_second": 36.85045141034672,
+      "latency_median_s": 3.472187476232648,
+      "latency_p95_s": 3.488910134881735,
+      "ttft_median_s": 0.1411487739533186,
+      "rows": [
+        {
+          "latency_s": 3.4711072221398354,
+          "ttft_s": 0.14029378443956375,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.4701289795339108,
+          "ttft_s": 0.14046460017561913,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.458901785314083,
+          "ttft_s": 0.14109693467617035,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.4846094734966755,
+          "ttft_s": 0.155286967754364,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.488910134881735,
+          "ttft_s": 0.14120061323046684,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.477402437478304,
+          "ttft_s": 0.142596036195755,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.4631412364542484,
+          "ttft_s": 0.14151175692677498,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.4732677303254604,
+          "ttft_s": 0.14101286232471466,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        }
+      ]
+    },
+    {
+      "concurrency": 1,
+      "repeat": 2,
+      "requests": 8,
+      "elapsed_s": 27.40896623954177,
+      "tokens_per_second": 37.360037261190755,
+      "latency_median_s": 3.42289749532938,
+      "latency_p95_s": 3.4716030694544315,
+      "ttft_median_s": 0.13922320492565632,
+      "rows": [
+        {
+          "latency_s": 3.470404401421547,
+          "ttft_s": 0.14138691872358322,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.4528114460408688,
+          "ttft_s": 0.14054987952113152,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.4381758458912373,
+          "ttft_s": 0.13818968832492828,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.4716030694544315,
+          "ttft_s": 0.1435692235827446,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.3798908703029156,
+          "ttft_s": 0.1380150131881237,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.407619144767523,
+          "ttft_s": 0.14025672152638435,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.4060411043465137,
+          "ttft_s": 0.13809581845998764,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        },
+        {
+          "latency_s": 3.3819227069616318,
+          "ttft_s": 0.13816993311047554,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25853
+        }
+      ]
+    },
+    {
+      "concurrency": 4,
+      "repeat": 0,
+      "requests": 8,
+      "elapsed_s": 6.8948823399841785,
+      "tokens_per_second": 148.51594987512865,
+      "latency_median_s": 3.4442614503204823,
+      "latency_p95_s": 3.4521090276539326,
+      "ttft_median_s": 0.16388247907161713,
+      "rows": [
+        {
+          "latency_s": 3.4478382728993893,
+          "ttft_s": 0.1470252051949501,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.4499817565083504,
+          "ttft_s": 0.1724388748407364,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.4510372392833233,
+          "ttft_s": 0.1722499579191208,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.4521090276539326,
+          "ttft_s": 0.17212415859103203,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.4406846277415752,
+          "ttft_s": 0.1444069780409336,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.4359128922224045,
+          "ttft_s": 0.16403595358133316,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.437068533152342,
+          "ttft_s": 0.1637290045619011,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.4383240193128586,
+          "ttft_s": 0.16361533850431442,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        }
+      ]
+    },
+    {
+      "concurrency": 4,
+      "repeat": 1,
+      "requests": 8,
+      "elapsed_s": 6.888565689325333,
+      "tokens_per_second": 148.6521354636731,
+      "latency_median_s": 3.441410530358553,
+      "latency_p95_s": 3.445649929344654,
+      "ttft_median_s": 0.16295521333813667,
+      "rows": [
+        {
+          "latency_s": 3.44141186401248,
+          "ttft_s": 0.15875490754842758,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.44349367544055,
+          "ttft_s": 0.18416999280452728,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.444530136883259,
+          "ttft_s": 0.18399768695235252,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.445649929344654,
+          "ttft_s": 0.18388443812727928,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.441409196704626,
+          "ttft_s": 0.14346297457814217,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.436500657349825,
+          "ttft_s": 0.1631016992032528,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.4374454841017723,
+          "ttft_s": 0.16280872747302055,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.438490640372038,
+          "ttft_s": 0.16264772042632103,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        }
+      ]
+    },
+    {
+      "concurrency": 4,
+      "repeat": 2,
+      "requests": 8,
+      "elapsed_s": 6.87567051500082,
+      "tokens_per_second": 148.9309293931281,
+      "latency_median_s": 3.4349739979952574,
+      "latency_p95_s": 3.441602524369955,
+      "ttft_median_s": 0.1638846080750227,
+      "rows": [
+        {
+          "latency_s": 3.4373664483428,
+          "ttft_s": 0.14580997452139854,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.4395144544541836,
+          "ttft_s": 0.17126385495066643,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.4405705854296684,
+          "ttft_s": 0.17109953984618187,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.441602524369955,
+          "ttft_s": 0.17094600573182106,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.4325815476477146,
+          "ttft_s": 0.14436757937073708,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.4277015067636967,
+          "ttft_s": 0.16403819620609283,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.4286124110221863,
+          "ttft_s": 0.16373101994395256,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        },
+        {
+          "latency_s": 3.429705787450075,
+          "ttft_s": 0.16358040645718575,
+          "output_tokens": 128,
+          "text": "**100 Useful Facts About Astronomy**\n\n1. **The Universe’s Age** – The observable universe is about 13.8 billion years old, determined from the cosmic microwave background (CMB) and Hubble’s law.  \n2. **Speed of Light** – Light travels at 299,792 km/s (≈186,282 mi/s). One light‑year is the distance light covers in one year (~9.46 trillion km).  \n3. **Solar System Size** – The Sun’s radius",
+          "logprob_tokens": 0,
+          "serialized_event_bytes": 25876
+        }
+      ]
+    }
+  ]
+}
